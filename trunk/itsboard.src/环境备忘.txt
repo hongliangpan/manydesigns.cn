@@ -1,0 +1,17 @@
+172.17.189.239  
+ssh :  root / sinocall
+ftp :  用户名 ftp ， 密码是 ftp
+ftp 172.17.189.73 ftp ftp
+/usr/local/portofino-4.1.beta5/apache-tomcat-7.0.42
+old应用路径是 /usr/local/tomcat_itsboard
+
+数据库: jdbc:mysql://172.16.36.239:3306/itsboard?useUnicode=true&amp;amp;characterEncoding=UTF-8" username="admin" password="admin"
+
+访问地址 http://172.16.36.239:8080/
+
+
+jdbc:mysql://172.16.13.154:3306/itsboard?useUnicode=true&amp;characterEncoding=UTF-8
+
+部署环境
+http://172.17.189.239:8080/
+http://172.17.189.154:8080/

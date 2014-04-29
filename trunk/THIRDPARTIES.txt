@@ -1,0 +1,343 @@
+ManyDesigns Portofino includes other software as detailed below.
+
+This product includes software developed by the Apache Software 
+Foundation (http://www.apache.org/).
+
+This product includes software developed by the
+OpenSymphony Group (http://www.opensymphony.com/).
+
+This product includes software developed by the
+Visigoth Software Society (http://www.visigoths.org/).
+
+This software contains unmodified binary redistributions for H2 database engine (http://www.h2database.com/),
+which is dual licensed and available under a modified version of the MPL 1.1 (Mozilla Public License)
+or under the (unmodified) EPL 1.0 (Eclipse Public License).
+An original copy of the license agreement can be found at: http://www.h2database.com/html/license.html
+
+All trademarks belong to their respective owners.
+
+Ace (Ajax.org Cloud9 Editor)
+Site: https://github.com/ajaxorg/ace/
+Files: ace directory
+License: Mozilla Public License
+
+ANTLR Parser Generator
+Site: http://www.antlr.org/
+File: antlr-2.7.7.jar
+License: BSD
+
+Apache Avalon
+Site: http://avalon.apache.org/
+Files: avalon-framework-api-4.3.1.jar, avalon-framework-impl-4.3.1.jar
+License: Apache License v2.0
+
+Apache Batik
+Site: http://xmlgraphics.apache.org/batik/
+Files: batik-anim-1.7.jar, batik-awt-util-1.7.jar, batik-bridge-1.7.jar, batik-css-1.7.jar, batik-dom-1.7.jar,
+       batik-ext-1.7.jar, batik-extension-1.7.jar, batik-gvt-1.7.jar, batik-parser-1.7.jar,
+       batik-script-1.7.jar, batik-svg-dom-1.7.jar, batik-svggen-1.7.jar, batik-transcoder-1.7.jar,
+       batik-util-1.7.jar, batik-xml-1.7.jar
+License: Apache License v2.0
+
+Apache FOP
+Site: http://xmlgraphics.apache.org/fop/
+File: fop-1.0.jar
+License: Apache License v2.0
+
+Apache HttpClient
+Site: http://hc.apache.org/index.html
+Files: httpclient-4.0.jar, httpcore-4.0.1.jar
+License: Apache License v2.0
+
+Apache Shiro
+Site: http://shiro.apache.org
+Files: shiro-core-1.2.0.jar, shiro-web-1.2.0.jar
+License: Apache License v2.0
+
+Apache Xerces
+Site: http://xerces.apache.org
+File: xercesImpl-2.8.1.jar
+License: Apache License v2.0
+
+Apache XML-commons
+Site: http://xml.apache.org/commons/
+Files: xml-apis-1.3.04.jar, xml-apis-ext-1.3.04.jar
+License: Apache License v2 and W3C License on applicable parts
+
+Apache XML Graphics Commons
+Site: http://xmlgraphics.apache.org/commons/
+File: xmlgraphics-commons-1.4.jar
+License: Apache License v2.0
+
+ASM
+Site: http://asm.ow2.org/
+Files: asm-3.2.jar, asm-analysis-3.2.jar, asm-commons-3.2.jar, asm-tree-3.2.jar, asm-util-3.2.jar
+License: BSD
+
+Bootstrap
+Site: http://twitter.github.io/bootstrap/index.html
+Files: elements/src/main/resources/META-INF/resources/elements/bootstrap/
+License: Apache License v2.0
+
+Bootstrap Datepicker
+Site: https://github.com/eternicode/bootstrap-datepicker
+Files: elements/src/main/resources/META-INF/resources/elements/datepicker/
+License: Apache License v2.0
+
+Bouncy Castle
+Site: http://www.bouncycastle.org/java.html
+Files: bcmail-jdk14-1.38.jar, bcprov-jdk14-1.38.jar, bctsp-jdk14-1.38.jar
+License: MIT
+
+OpenSymphony ognl
+Site: http://www.opensymphony.com/ognl
+File: ognl-3.0.jar
+License: http://www.opensymphony.com/ognl/license.action
+
+c3p0 - JDBC3 Connection and Statement Pooling
+Site: http://www.mchange.com/projects/c3p0/
+File: c3p0-0.9.1.2.jar
+License: LGPL
+
+Commons BeanUtils
+Site: http://commons.apache.org/beanutils/
+File: commons-beanutils-1.8.3.jar
+License: Apache License v2
+
+Commons Codec
+Site: http://commons.apache.org/codec/
+File: commons-codec-1.3.jar
+License: Apache License v2
+
+Commons Collections
+Site: http://commons.apache.org/collections/
+File: commons-collections-3.1.jar
+License: Apache License v2
+
+Commons Configuration
+Site: http://commons.apache.org/configuration/
+File: commons-configuration-1.6.jar
+License: Apache License v2
+
+Commons DbUtils
+Site: http://commons.apache.org/dbutils/
+File: commons-dbutils-1.3.jar
+License: Apache License v2
+
+Commons Digester
+Site: http://commons.apache.org/digester/
+File: commons-digester-1.8.jar
+License: Apache License v2
+
+Commons Email
+Site: http://commons.apache.org/email/
+File: commons-email-1.2.jar
+License: Apache License v2
+
+Commons FileUpload
+Site: http://commons.apache.org/fileupload/
+File: commons-fileupload-1.2.1.jar
+License: Apache License v2
+
+Commons IO
+Site: http://commons.apache.org/io/
+File: commons-io-2.0.1.jar
+License: Apache License v2
+
+Commons Lang
+Site: http://commons.apache.org/lang/
+File: commons-lang-2.5.jar
+License: Apache License v2
+
+dom4j
+Site: http://dom4j.sourceforge.net/
+File: dom4j-1.6.1.jar
+License: BSD
+
+Ehcache
+Site: http://ehcache.org/
+File: ehcache-core-2.5.2.jar
+License: Apache License v2
+
+FindBugs JSR-305
+Site: http://findbugs.sourceforge.net/
+File: jsr305-1.3.9.jar
+License: Apache License v2
+
+Google Guava
+Site: http://code.google.com/p/guava-libraries/
+File: guava-jdk5-13.0.jar
+License: Apache License v2
+
+Google Guice
+Site: http://code.google.com/p/google-guice/
+File: guice-3.0.jar
+License: Apache License v2
+
+Groovy
+Site: http://groovy.codehaus.org/
+File: groovy-all-2.0.6.jar
+License: Apache License v2
+
+H2 Database Engine
+Site: http://www.h2database.com
+File: h2-1.2.126.jar
+License: Eclipse Public License v1.0
+
+Hibernate ORM
+Site: http://www.hibernate.org/
+Files: hibernate-core-3.6.9.Final.jar,
+       hibernate-commons-annotations-3.2.0.Final.jar,
+       hibernate-jpa-2.0-api-1.0.1.Final.jar,
+       hibernate-c3p0-3.6.9.Final.jar
+License: LGPL v2.1
+
+Intellij Annotations
+Site: http://www.jetbrains.com/idea
+File: annotations-7.0.3.jar
+License: Apache License
+
+iText
+Site: http://itextpdf.com/
+File: itext-2.1.7.jar
+License: LGPL
+
+Java Excel API
+Site: http://jexcelapi.sourceforge.net/
+File: jxl-2.6.10.jar
+License: LGPLv2
+
+Java Standard Tag Library (JSTL)
+Site: http://jstl.java.net/
+File: jstl-1.1.2.jar
+Licenses: Common Development and Distribution License (CDDL) version 1.0 + GNU General Public License (GPL) version 2
+
+Java Transaction API (JTA)
+Site: http://www.oracle.com/technetwork/java/javaee/jta/index.html
+File: jta-1.1.jar
+License: Java Transaction API Classes 1.1 Software License Agreement
+
+JavaBeans Activation Framework
+Site: http://www.oracle.com/technetwork/java/javase/downloads/index-135046.html
+File: activation-1.1.jar
+License: Oracle Binary Code License Agreement for Java SE
+
+JavaMail API 1.4.1
+http://java.sun.com/products/javamail/
+File: mail-1.4.jar
+License: Sun Microsystems JavaBeans Activation Framework 1.1.1 license
+
+Javassist
+Site: http://www.csg.ci.i.u-tokyo.ac.jp/~chiba/javassist/
+File: javassist-3.8.0.GA.jar
+License: Apache License
+
+JAXB API
+Site: http://jaxb.java.net/
+Files: jaxb-api-2.1.jar, jaxb-impl-2.1.13.jar
+License: CDDL v1.1 and GPL v2
+
+JCiP Annotations
+Site: http://jcip.net
+File: jcip-annotations-1.0.jar
+License: Creative Commons Attribution License 2.5
+
+Jcommon
+Site: http://www.jfree.org/jcommon/index.php
+File: jcommon-1.0.15.jar
+License: LGPL
+
+JFreeChart
+Site: http://www.jfree.org/jfreechart/
+File: jfreechart-1.0.12.jar
+License: LGPL
+
+Joda Time
+Site: http://joda-time.sourceforge.net/
+File: joda-time-1.6.2.jar
+License: Apache License v2
+
+JQuery UI
+Site: http://jqueryui.com
+Files: jquery-ui directory
+License: MIT
+
+JQuery Treetable
+Site: http://ludo.cubicphuse.nl/jquery-treetable/
+Files: jquery-treetable directory
+License: MIT
+
+JSON
+Site: http://www.json.org
+File: json-20090211.jar
+License: JSON License (http://www.json.org/license.html)
+
+JSoup
+Site: http://jsoup.org/
+File: jsoup-1.7.1.jar
+License: MIT
+
+JSqlParser
+Site: http://jsqlparser.sourceforge.net/home.php
+File: jsqlparser-0.8.0.jar
+License: LGPL
+
+Liquibase
+Site: http://www.liquibase.org/
+File: liquibase-core-2.0.5.jar
+License: Apache License v2.0
+
+LOGBack
+Site: http://logback.qos.ch/
+Files: logback-classic-0.9.26.jar, logback-core-0.9.26.jar
+License: Eclipse Public License v1.0
+
+NekoHTML
+Site: http://nekohtml.sourceforge.net/
+File: nekohtml-1.9.10.jar
+License: Apache License v2.0
+
+openid-selector
+Site: https://code.google.com/p/openid-selector/
+Files: openid-selector directory
+License: BSD
+
+openid4java
+Site: http://code.google.com/p/openid4java/
+File: openid4java-nodeps-0.9.6.jar
+License: Apache License v2.0
+
+Quartz Scheduler
+Site: http://quartz-scheduler.org/
+File: quartz-2.1.6.jar
+License: Apache License v2.0
+
+Standard: An Implementation of the JSP™ Standard Tag Library (JSTL)
+Site: http://jakarta.apache.org/taglibs/doc/standard-doc/ReleaseNotes.html
+File: standard-1.1.2.jar
+License: Apache License v2.0
+
+Simple Logging Facade for Java
+Site: http://www.slf4j.org/
+Files: slf4j-api-1.6.1.jar, jcl-over-slf4j-1.6.1.jar, log4j-over-slf4j-1.6.1.jar
+License: MIT
+
+StAX API
+Site: http://stax.codehaus.org/
+File: stax-api-1.0-2.jar
+License: Apache License v2
+
+Stripes
+Site: http://www.stripesframework.org
+File: stripes-1.5.7.jar
+License: Apache License v2.0
+
+SweetiePlus Icon Set
+Site: http://sublink.ca/icons/sweetieplus/
+Files: SweetiePlus-v2-SublinkInteractive directory
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
+
+Xalan-Java
+Site: http://xml.apache.org/xalan-j/
+File: xalan-2.6.0.jar
+License: Apache License v2
