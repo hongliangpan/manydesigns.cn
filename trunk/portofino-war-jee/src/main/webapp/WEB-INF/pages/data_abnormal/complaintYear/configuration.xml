@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="状态" name="客户投诉情况--年限" orientation="HORIZONTAL" query="SELECT YEAR(cc.c_time) c_time_y,COUNT(cc.c_customer_id+cc.c_complaint_id) FROM t_customer_complaint cc&#xD;&#xA;INNER JOIN t_customer c ON cc.c_customer_id=c.c_id&#xD;&#xA;INNER JOIN t_dict_complaint d ON d.c_id=cc.c_complaint_id&#xD;&#xA;WHERE 1=1&#xD;&#xA;GROUP BY YEAR(cc.c_time)" type="PIE3D" urlExpression=""/>

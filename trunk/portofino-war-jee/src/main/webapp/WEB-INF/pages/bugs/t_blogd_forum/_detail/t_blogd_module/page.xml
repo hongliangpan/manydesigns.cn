@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="模块字典" id="wh3gtoq573kj3l047tfobbdwq" navigationRoot="INHERIT" title="模块字典">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

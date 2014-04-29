@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 报表" database="riil_its_board" editTitle="Edit 报表" largeResultSet="false" name="t_rpt" query="from t_rpt order by id desc" readTitle="报表" rowsPerPage="10" searchTitle="Search 报表" variable="t_rpt">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="主键" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="报表定义" name="c_rpt_def_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="报表名称" name="c_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="排序字段" name="c_order_field" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="排序方式:asc/desc" name="c_order_type" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="生成文件类型" name="c_doc_types" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="每页行数" name="c_page_rows" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="Topn数量" name="c_topn" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="分组ID" name="c_group_id" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="所属域ID" name="c_domain_id" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="区域ID" name="c_region_id" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="参数1，key=value" name="c_param_value1" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="参数2" name="c_param_value2" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="参数3" name="c_param_value3" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="参数4" name="c_param_value4" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="参数5" name="c_param_value5" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建用户" name="c_create_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建时间" name="c_create_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="修改用户" name="c_modify_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="修改时间" name="c_modify_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段1" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段2" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段3" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段4" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="rpt_doc_types"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="rpt_order_type"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="rpt_order_field"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="rpt _rpt_def_id"/>
+    </selectionProviders>
+</configuration>

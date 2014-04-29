@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="项目管理" id="e96fs7h65sp0sy2rygq23r4pu" navigationRoot="INHERIT" title="项目管理">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

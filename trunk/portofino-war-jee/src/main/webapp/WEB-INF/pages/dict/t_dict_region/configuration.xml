@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 区域" database="riil_its_board" editTitle="Edit 区域" largeResultSet="false" name="t_dict_region" query="from t_dict_region order by c_sort_id" readTitle="区域" rowsPerPage="40" searchTitle="Search 区域" variable="t_dict_region">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="片区" name="c_region1" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="大区" name="c_region2" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="省区" name="c_region3" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="排序号" name="c_sort_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段1" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段2" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="创建用户" name="c_create_user" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="创建时间" name="c_create_time" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="修改用户" name="c_modify_user" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="修改时间" name="c_modify_time" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

@@ -1,0 +1,964 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/theme/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/theme/bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="/theme/datepicker/css/datepicker.css">
+<link rel="stylesheet" type="text/css" href="/theme/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+<script type="text/javascript" src="/theme/jquery/jquery.min.js" ></script>
+<script type="text/javascript" src="/theme/bootstrap/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="/theme/datepicker/js/bootstrap-datepicker.js" ></script>
+<script type="text/javascript" src="/theme/jquery-ui/js/jquery-ui-1.10.3.custom.min.js" ></script>
+
+<link rel="stylesheet" type="text/css" href="/theme/portofino.css">
+<link type="text/css" rel="stylesheet" href="/m/openid/openid-selector/css/openid.css" />
+<style type="text/css">
+    #openid_form { width: auto; }
+    #openid_username { margin-right: .5em; }
+    div#openid_highlight { padding: 0; }
+</style>
+
+<script type="text/javascript" src="/m/pageactions/portofino-messages.js" ></script>
+<script type="text/javascript" src="/m/pageactions/portofino.js" ></script>
+<script type="text/javascript" src="/m/crud/crud.js" ></script>
+<script type="text/javascript">
+    portofino.contextPath = '';
+</script>
+<base href="http://127.0.0.1:8080/data_normal/" />
+<style type="text/css">
+@media (min-width: 980px) {
+    body {
+        padding-top: 50px;
+    }
+}
+</style><title>
+    </title>
+</head>
+    <!-- superpan add style="margin:0"
+    style="padding-left: 0;"
+    padding: 10px 0.25em 2ex 20%;上、右、下、左
+     style="padding-left: 0;"
+     -->
+    <body>
+    
+
+
+
+<!--  superpan delete navbar-inverse -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <h4 class="pull-left" style="margin-left:18px;">
+                <a href="/">ITS项目看板</a>
+            </h4>
+            <div class="header-menu nav-collapse collapse">
+                
+                    <form id="pageAdminForm" action="/actions/admin/page">
+                        <input type="hidden" name="originalPath" value="/data_normal" />
+                    </form>
+                
+                <ul class="nav pull-right">
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-user icon-white"></i>
+                            super <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                            <li>
+                                <a href="/login?returnUrl=%2Fdata_normal&amp;cancelReturnUrl=%2Fdata_normal&amp;changePassword=">
+                                    修改密码
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/actions/admin">
+                                    后台管理
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/login?returnUrl=%2Fdata_normal&amp;cancelReturnUrl=%2Fdata_normal&amp;logout=">
+                                    注销
+                                </a>
+                            </li>
+                            
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:portofino.enablePageActionDragAndDrop($(this), '/data_normal');">
+                                    <i class="icon-file"></i> Edit layout
+                                </a>
+                            </li>
+                            <li>
+                                
+                                <a href="/actions/admin/page?pageChildren=&amp;originalPath=%2Fdata_normal">
+                                    <i class="icon-folder-open"></i> Page children
+                                </a>
+                            </li>
+                            <li>
+                                
+                                <a href="/actions/admin/page?newPage=&amp;originalPath=%2Fdata_normal">
+                                    <i class="icon-plus"></i> Add new page
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript:portofino.confirmDeletePage('/data_normal', '');">
+                                    <i class="icon-minus"></i> Delete page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:portofino.showCopyPageDialog('/data_normal', '');">
+                                    <i class="icon-file"></i> Copy page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:portofino.showMovePageDialog('/data_normal', '');">
+                                    <i class="icon-share"></i> Move page
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/actions/admin/page?pagePermissions=&amp;originalPath=%2Fdata_normal">
+                                    <i class="icon-user"></i> Page permissions
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+        	<table style="width:100%;"><tr><td style="width:160px;" valign="top">
+        	
+            	<div style="margin-left:30px;">
+	                
+
+<div class=" embeddedPageActions" data-page-action-list="aboveNavigation">
+    
+    
+</div>
+	                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="well" style="max-width: 340px; padding: 8px 0;">
+    <ul class="nav nav-list"><li class="nav-header"></li><li><a href="/index">&#31995;&#32479;&#27010;&#35272;</a></li><li class="active"><a href="/data_normal">&#24120;&#35268;&#25968;&#25454;&#20998;&#26512;</a></li><li><a href="/data_abnormal">&#24322;&#24120;&#25968;&#25454;&#20998;&#26512;</a></li><li><a href="/data_warranty">&#32500;&#20445;&#19982;&#36807;&#26399;</a></li><li><a href="/customer_matrix">&#23458;&#25143;&#30697;&#38453;</a></li><li><a href="/project_matrix">&#39033;&#30446;&#30697;&#38453;</a></li><li><a href="/echarts">&#21160;&#24577;&#22270;&#34920;</a></li><li class="divider"><a href="/line1">------------------</a></li><li><a href="/t_customer">&#23458;&#25143;&#20449;&#24687;</a></li><li class="divider"><a href="/line2">------------------</a></li><li><a href="/t_dict_region">&#21306;&#22495;</a></li><li><a href="/t_dict_industry">&#34892;&#19994;&#21450;&#32454;&#20998;&#24066;&#22330;</a></li><li><a href="/t_dict_module">RIIL&#27169;&#22359;</a></li><li><a href="/t_dict_state">&#39033;&#30446;&#29366;&#24577;</a></li><li><a href="/t_dict_version">&#20135;&#21697;&#29256;&#26412;</a></li><li><a href="/t_dict_complaint">&#25237;&#35785;&#21407;&#22240;</a></li><li><a href="/help">&#24110;&#21161;&#20449;&#24687;</a></li><li class="divider"><a href="/line3">------------------</a></li><li><a href="/test">test</a></li><li class="nav-header">常规数据分析</li><li><a href="/data_normal/projectCharState">&#39033;&#30446;&#29366;&#24577;&#22270;--&#29366;&#24577;</a></li><li><a href="/data_normal/projectCharTypeABC">&#39033;&#30446;&#29366;&#24577;&#22270;--&#31867;&#22411;</a></li><li><a href="/data_normal/projectCharIndustry">&#39033;&#30446;&#29366;&#24577;&#22270;--&#34892;&#19994;</a></li><li><a href="/data_normal/projectCharIndustry2">&#39033;&#30446;&#29366;&#24577;&#22270;--&#32454;&#20998;</a></li><li><a href="/data_normal/customerChartState">&#23458;&#25143;&#20351;&#29992;&#29366;&#24577;&#22270;</a></li><li><a href="/data_normal/customerChartModule">&#29616;&#22330;&#20135;&#21697;&#21151;&#33021;&#24212;&#29992;&#20998;&#26512;</a></li></ul>
+	</div>
+	                
+
+<div class=" embeddedPageActions" data-page-action-list="belowNavigation">
+    
+    
+</div>
+	            </div>
+            
+            </td><td valign="top">
+            <div class="content_panel" style="width:auto; margin-right:10px;" >
+                
+                <div class="pageHeader">
+                    
+                    
+                    	
+
+
+<div class="breadcrumbs" style="font-size:14px;">
+    
+                <span class="breadcrumb-item selected"
+                      title="常规数据分析">
+                    常规数据分析
+                </span>
+                
+</div>
+                        <div class="pull-right" style="position:relative;">
+                            <form action="/data_normal" method="post">
+                                <input type="hidden" name="returnUrl" value="/data_normal"/>
+                                
+
+<button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                            <div style="display: none;"><input type="hidden" name="_sourcePage" value="7smzvfZofoPsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="HiuqWMGyBy8=" /></div></form>
+                        </div>
+                    
+                        <h3 class="pageTitle">
+                            
+    
+                        </h3>
+                    
+                </div>
+                <div class="pageBody">
+                    
+
+
+
+		<div class="btn-group" style="margin-left: -2px;">
+			<button type="button" class="btn btn-info dropdown-toggle"
+				data-toggle="dropdown">
+				选择区域:&nbsp;全国
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" style="width: 340px;">
+
+				<li style="list-style: none;">
+					<div class="btn-group btn-group-xs" style="margin-left:8px;">
+						<button type="button"
+							class='btn btn-small btn-warning'
+							onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region='">
+							全国</button>
+						
+							<button type="button"
+							class='btn btn-small btn-default'
+							onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=北区'">
+							北区</button>
+						
+							<button type="button"
+							class='btn btn-small btn-default'
+							onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=南区'">
+							南区</button>
+						
+							<button type="button"
+							class='btn btn-small btn-default'
+							onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=西区'">
+							西区</button>
+						
+					</div>
+				</li>
+
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=东北'">
+						东北
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=大连'">
+						大连
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=黑龙江'">
+						黑龙江
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=吉林'">
+						吉林
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=辽宁'">
+						辽宁
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=华北'">
+						华北
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=河南'">
+						河南
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=湖北'">
+						湖北
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=江西'">
+						江西
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=山西'">
+						山西
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=津鲁'">
+						津鲁
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=山东'">
+						山东
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=天津'">
+						天津
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=京冀'">
+						京冀
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=北京'">
+						北京
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=河北'">
+						河北
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=行业系统部'">
+						行业系统部
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=国际'">
+						国际
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=国际'">
+						国际
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=华东'">
+						华东
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=福建'">
+						福建
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=厦门'">
+						厦门
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=华南'">
+						华南
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=广东'">
+						广东
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=海南'">
+						海南
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=深圳'">
+						深圳
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=华中'">
+						华中
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=安徽'">
+						安徽
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=湖南'">
+						湖南
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=江苏'">
+						江苏
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=上海'">
+						上海
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=苏宁'">
+						苏宁
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=浙江'">
+						浙江
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=西北'">
+						西北
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=甘肃'">
+						甘肃
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=内蒙古'">
+						内蒙古
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=宁夏'">
+						宁夏
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=青海'">
+						青海
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=陕西'">
+						陕西
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=新疆'">
+						新疆
+					</button>
+					
+				</div>
+				
+
+				<li style="list-style: none; margin: 4px 0px;" class="divider"></li>
+					<button type="button"  style="margin-left:8px;"
+						class='btn btn-small btn-info'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=西南'">
+						西南
+					</button>
+
+				<div class="btn-group btn-group-xs">
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=广西'">
+						广西
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=贵州'">
+						贵州
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=四川'">
+						四川
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=西藏'">
+						西藏
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=云南'">
+						云南
+					</button>
+					
+					<button type="button"
+						class='btn btn-small btn-default'
+						onclick="location='/data_normal?pageId=data_normal&statx=c_state&staty=c_industry1&sortType=DESC&region=重庆'">
+						重庆
+					</button>
+					
+				</div>
+				
+			</ul>
+		</div>
+	
+                </div>
+                <div class="pageFooter">
+                    
+                </div>
+                <div class="embeddedPages">
+                    
+
+<div class="row-fluid embeddedPageActions" data-page-action-list="default">
+    
+    
+</div>
+                    <div class="row-fluid">
+                        
+
+<div class="span4 embeddedPageActions" data-page-action-list="contentLayout3Left">
+    
+    
+        
+
+
+    <a name="projectCharState"></a>
+
+<div id="embeddedPageAction_projectCharState" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/projectCharState" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#projectCharState"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="Eo5cpy7ZMdXsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="VkE4Mnbi5_Q=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        项目状态图--状态
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/projectCharState?chartId=v4k9qffqn19qcwzt7jh6m62a0&amp;chart=" alt="alt" usemap="#v4k9qffqn19qcwzt7jh6m62a0" style="border: none;" /><map id="v4k9qffqn19qcwzt7jh6m62a0" name="v4k9qffqn19qcwzt7jh6m62a0"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+        
+
+
+    <a name="projectCharIndustry"></a>
+
+<div id="embeddedPageAction_projectCharIndustry" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/projectCharIndustry" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#projectCharIndustry"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="66GHAm88oo3sARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="UjWQD1OPO7Q=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        项目状态图--行业
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/projectCharIndustry?chartId=al43wp7pekw3l4f90qj3hv82v&amp;chart=" alt="alt" usemap="#al43wp7pekw3l4f90qj3hv82v" style="border: none;" /><map id="al43wp7pekw3l4f90qj3hv82v" name="al43wp7pekw3l4f90qj3hv82v"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+</div>
+                        
+
+<div class="span4 embeddedPageActions" data-page-action-list="contentLayout3Center">
+    
+    
+        
+
+
+    <a name="projectCharTypeABC"></a>
+
+<div id="embeddedPageAction_projectCharTypeABC" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/projectCharTypeABC" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#projectCharTypeABC"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="gfZWJh1oAInsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="sTOXMko-RBs=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        项目状态图--类型
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/projectCharTypeABC?chartId=jn4hlscrvgdfmy0jdlh3zrzs7&amp;chart=" alt="alt" usemap="#jn4hlscrvgdfmy0jdlh3zrzs7" style="border: none;" /><map id="jn4hlscrvgdfmy0jdlh3zrzs7" name="jn4hlscrvgdfmy0jdlh3zrzs7"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+        
+
+
+    <a name="projectCharIndustry2"></a>
+
+<div id="embeddedPageAction_projectCharIndustry2" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/projectCharIndustry2" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#projectCharIndustry2"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="D_6IBzQToGjsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="zdpMxhoggm4=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        项目状态图--细分
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/projectCharIndustry2?chartId=6cuuqknhw7xk14cvcgbqh5x1w&amp;chart=" alt="alt" usemap="#6cuuqknhw7xk14cvcgbqh5x1w" style="border: none;" /><map id="6cuuqknhw7xk14cvcgbqh5x1w" name="6cuuqknhw7xk14cvcgbqh5x1w"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+</div>
+                        
+
+<div class="span4 embeddedPageActions" data-page-action-list="contentLayout3Right">
+    
+    
+        
+
+
+    <a name="customerChartState"></a>
+
+<div id="embeddedPageAction_customerChartState" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/customerChartState" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#customerChartState"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="qZqba4aVIALsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="6_CVHrn1jnc=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        客户使用状态图
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/customerChartState?chartId=o7bt0d6kg627b4nnwl6irsu0y&amp;chart=" alt="alt" usemap="#o7bt0d6kg627b4nnwl6irsu0y" style="border: none;" /><map id="o7bt0d6kg627b4nnwl6irsu0y" name="o7bt0d6kg627b4nnwl6irsu0y"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+        
+
+
+    <a name="customerChartModule"></a>
+
+<div id="embeddedPageAction_customerChartModule" class="">
+    
+        <div class="pageHeader">
+        
+            <div class="pull-right">
+                <form action="/data_normal/customerChartModule" method="post">
+                    <input type="hidden" name="returnUrl"
+                           value="/data_normal#customerChartModule"/>
+                    
+
+<button name="dataList"
+                    
+                 title="&#25968;&#25454;&#21015;&#34920;" type="submit" class="btn btn-mini"><i class=" icon-plus "></i></button> <button name="configure"
+                    
+                 title="&#35774;&#32622;" type="submit" class="btn btn-mini"><i class=" icon-wrench "></i></button> 
+                <div style="display: none;"><input type="hidden" name="_sourcePage" value="0P_OhDrsqWPsARBYW7EPRTFkDLKuCGXTk5E-EXCBHgA=" /><input type="hidden" name="__fp" value="iXVjjKeRdY4=" /></div></form>
+            </div>
+            <h6 class="pageTitle">
+                
+        现场产品功能应用分析
+    
+            </h6>
+        
+    </div>
+    <div class="pageBody">
+        
+        <div style="text-align: center;">
+            <img src="/data_normal/customerChartModule?chartId=r9bpowtqbr2kp0gyw6n8qkl4k&amp;chart=" alt="alt" usemap="#r9bpowtqbr2kp0gyw6n8qkl4k" style="border: none;" /><map id="r9bpowtqbr2kp0gyw6n8qkl4k" name="r9bpowtqbr2kp0gyw6n8qkl4k"></map>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="pageFooter">
+        
+    </div>
+
+    
+</div>
+    
+</div>
+                    </div>
+                    <div class="row-fluid">
+                        
+
+<div class="span6 embeddedPageActions" data-page-action-list="contentLayout2Left">
+    
+    
+</div>
+                        
+
+<div class="span6 embeddedPageActions" data-page-action-list="contentLayout2Right">
+    
+    
+</div>
+                    </div>
+                    
+
+<div class="row-fluid embeddedPageActions" data-page-action-list="contentLayoutBottom">
+    
+    
+</div>
+                </div>
+                <div class="contentFooter">
+                    
+                </div>
+            </div>
+        	</td></tr></table>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="pull-right">
+            页面响应时间: 174 ms.
+        </div>
+        Powered by <a href="http://www.ruijie.com.cn/">Ruijie - ITS Dept. ver20131225</a>
+    </div>
+</footer>
+    
+    </body>
+</html>
+

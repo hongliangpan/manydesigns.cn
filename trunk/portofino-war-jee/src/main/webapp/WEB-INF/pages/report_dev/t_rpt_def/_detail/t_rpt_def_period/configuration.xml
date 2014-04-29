@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 报表周期" database="riil_its_board" editTitle="Edit 报表周期" largeResultSet="false" name="t_rpt_def_period" query="from t_rpt_def_period where c_rpt_def_id = %{#t_rpt_def.c_id} order by c_sort_id desc" readTitle="报表周期" rowsPerPage="10" searchTitle="报表周期" variable="t_rpt_def_period">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="主键" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="报表定义id" name="c_rpt_def_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="周期类型" name="c_period_type_id" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="sql中数据表名后缀" name="c_table_name" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="数据表名后缀，如_xx，替换为1h,6h,1d,1w,1m" name="c_table_suffix" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段1" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段2" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段3" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段4" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建用户" name="c_create_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建时间" name="c_create_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改用户" name="c_modify_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改时间" name="c_modify_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" name="c_sort_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="rpt_def_period _period_type_id"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" fk="fk_rpt_def_period_id" searchDisplayMode="DROPDOWN"/>
+    </selectionProviders>
+</configuration>

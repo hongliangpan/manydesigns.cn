@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="日报" id="yfxe03vrs3xmcfo0dj9m48sug" navigationRoot="INHERIT" title="日报">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_pm_daily" showInNavigation="true"/>
+            <childPage name="t_pm_daily_list" showInNavigation="true"/>
+            <childPage name="t_pm_day_off" showInNavigation="true"/>
+            <childPage name="t_pm_module" showInNavigation="true"/>
+            <childPage name="t_pm_project" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

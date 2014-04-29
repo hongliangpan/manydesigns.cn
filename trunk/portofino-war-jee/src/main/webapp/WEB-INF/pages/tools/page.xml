@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="常用工具" id="glso9vg3wjcgul3px25ru9pny" navigationRoot="INHERIT" title="常用工具">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="toolsDownload" showInNavigation="true"/>
+            <childPage name="help" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

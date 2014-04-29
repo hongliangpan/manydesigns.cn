@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create my t sys group user rel" database="riil_its_board" editTitle="Edit my t sys group user rel" largeResultSet="false" name="t_sys_group_user_rel" query="from t_sys_group_user_rel where c_user_id = %{#securityUtils.primaryPrincipal.id} order by id desc" readTitle="my t sys group user rel" rowsPerPage="10" searchTitle="Search my t sys group user rel" variable="t_sys_group_user_rel">
+    <properties>
+        <property enabled="true" inSummary="true" insertable="true" label="工作组ID" name="c_group_id" searchable="true" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="用户ID" name="c_user_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

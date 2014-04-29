@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 缺陷状态" database="riil_its_board" editTitle="Edit 缺陷状态" largeResultSet="false" name="t_blogd_state" query="from t_blogd_state order by c_sort_id" readTitle="缺陷状态" rowsPerPage="10" searchTitle="Search 缺陷状态" variable="t_blogd_state">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="名称" name="c_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="排序号" name="c_sort_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

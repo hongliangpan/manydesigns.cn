@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="报表统计" id="42n3l6oqdi4s814r3bty9byuk" navigationRoot="INHERIT" title="报表统计">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="report_query" showInNavigation="true"/>
+            <childPage name="report_view" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

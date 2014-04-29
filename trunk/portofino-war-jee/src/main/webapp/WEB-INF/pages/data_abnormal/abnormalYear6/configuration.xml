@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="state" name="开工6个月未竣工项目--年限" orientation="VERTICAL" query="SELECT YEAR(p.c_order_time) c_order_time,COUNT(p.c_id) c_count FROM t_project p&#xD;&#xA;INNER JOIN t_customer c ON c.c_id=p.c_customer_id&#xD;&#xA;WHERE DATEDIFF(IFNULL(c_end_date,NOW()),IFNULL(p.c_begin_date,p.c_order_time))&gt;180 AND 1=1&#xD;&#xA;GROUP BY YEAR(p.c_order_time)" type="PIE3D" urlExpression=""/>

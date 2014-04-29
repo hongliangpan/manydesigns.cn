@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="状态" name="按项目状态统计" orientation="VERTICAL" query="select s.c_name state,count(0) from t_project p INNER JOIN t_dict_state s ON p.c_state=s.c_id INNER JOIN t_customer c ON p.c_customer_id=c.c_id   group by s.c_id" type="BAR3D" urlExpression=""/>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="state" name="开工6个月未竣工项目--状态" orientation="HORIZONTAL" query="SELECT CASE WHEN (p.c_category=NULL OR p.c_category='') THEN '未知' ELSE p.c_category END c_category,COUNT(p.c_id) c_count FROM t_project p&#xD;&#xA;INNER JOIN t_customer c ON c.c_id=p.c_customer_id&#xD;&#xA;WHERE DATEDIFF(IFNULL(c_end_date,NOW()),IFNULL(p.c_begin_date,p.c_order_time))&gt;180 AND 1=1&#xD;&#xA;GROUP BY p.c_category" type="PIE3D" urlExpression=""/>

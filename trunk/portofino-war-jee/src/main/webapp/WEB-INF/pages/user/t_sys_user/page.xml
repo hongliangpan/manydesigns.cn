@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="用户" id="ulbw3ry5bg4ll7kiyxeoa6x9t" navigationRoot="INHERIT" title="用户管理">
+    <detailLayout template="default">
+        <childPages>
+            <childPage name="t_sys_group_user_rel" showInNavigation="true"/>
+            <childPage container="default" name="user_to_group" order="0" showInNavigation="true"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="管理员">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+    </permissions>
+</page>

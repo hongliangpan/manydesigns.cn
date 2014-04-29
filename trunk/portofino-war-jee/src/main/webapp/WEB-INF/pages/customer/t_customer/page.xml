@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="客户信息管理，包括客户、项目、投诉、下单、部署模块及热点模块等信息" id="5ptylog29lkz7bx3m288rvrzz" navigationRoot="INHERIT" title="客户管理">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="t_customer_pm" order="0" showInNavigation="true"/>
+            <childPage container="default" name="t_customer_warranty" showInNavigation="true"/>
+            <childPage container="default" name="t_customer_complaint" order="0" showInNavigation="true"/>
+            <childPage container="default" name="t_project" order="0" showInNavigation="true"/>
+            <childPage container="default" name="t_project_order" order="0" showInNavigation="true"/>
+            <childPage container="default" name="projectModule" order="0" showInNavigation="true"/>
+            <childPage container="default" name="projectHotModule" order="0" showInNavigation="true"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="registered">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+    </permissions>
+</page>

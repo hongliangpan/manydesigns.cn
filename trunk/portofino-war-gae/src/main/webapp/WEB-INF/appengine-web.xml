@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <application>portofino4-test</application>
+    <version>1</version>
+    <threadsafe>true</threadsafe>
+
+    <sessions-enabled>true</sessions-enabled>
+    <!--<async-session-persistence enabled="true"/>-->
+
+    <static-files>
+        <include path="/favicon.ico" />
+        <include path="/robots.txt" />
+        <!--<include path="/elements.js" /> TODO Servlet 3.0
+        <include path="/ace/**" />
+        <include path="/ckeditor/**" />
+        <include path="/ckeditor-custom/**" />
+        <include path="/famfamfam_mini_icons/**" />
+        <include path="/jquery-treetable/**" />
+        <include path="/jquery-ui/**" />
+        <include path="/openid-selector/**" />
+        <include path="/SweetiePlus-v2-SublinkInteractive/**" />-->
+
+        <include path="/theme/images/**" />
+   </static-files>
+
+    <system-properties>
+        <!-- Configure logging -->
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+        <!-- Needed to make JAXB work -->
+        <property name="com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize" value="true"/>
+        <property name="com.sun.xml.bind.v2.runtime.JAXBContextImpl.fastBoot" value="true"/>
+    </system-properties>
+</appengine-web-app>

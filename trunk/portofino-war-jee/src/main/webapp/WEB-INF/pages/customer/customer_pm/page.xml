@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="客户联系人" id="nv6bbn745d2nx1bpas5y9he1y" navigationRoot="INHERIT" title="客户联系人">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

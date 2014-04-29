@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 模块" database="riil_its_board" editTitle="编辑模块" largeResultSet="false" name="t_blogd_module" query="from t_blogd_module where c_forum_id = %{#t_blogd_forum.c_id} order by c_sort_id" readTitle="查看模块" rowsPerPage="10" searchTitle="Search 模块" variable="t_blogd_module">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="系统" name="c_forum_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="名称" name="c_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="排序号" name="c_sort_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" fk="fk_blog_forum" searchDisplayMode="DROPDOWN"/>
+    </selectionProviders>
+</configuration>

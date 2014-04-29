@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="组内用户" id="6nu92wg63y0589e6at9ol4e7r" navigationRoot="INHERIT" title="组内用户">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="管理员">
+            <permission>m2m-update</permission>
+        </group>
+    </permissions>
+</page>

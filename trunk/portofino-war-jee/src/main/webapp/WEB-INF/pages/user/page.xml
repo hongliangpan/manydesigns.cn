@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="权限管理" id="mljgxzt683vb7ocmacmok3swb" navigationRoot="INHERIT" title="权限管理">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_sys_user" showInNavigation="true"/>
+            <childPage name="t_sys_group" showInNavigation="true"/>
+            <childPage name="t_sys_dept" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="ITS项目看板帮助信息" id="ly0uf9snkjgtqidjmi286pda4" navigationRoot="INHERIT" title="帮助信息">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="registered">
+            <permission>permission.text.edit</permission>
+        </group>
+        <group name="administrators">
+            <permission>permission.text.edit</permission>
+        </group>
+    </permissions>
+</page>

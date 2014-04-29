@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="缺陷管理" id="fxyczb7st1pqirrpat7im1wvl" navigationRoot="INHERIT" title="缺陷管理">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="t_blog_comment" order="0" showInNavigation="false"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="super">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+        <group level="NONE" name="anonymous"/>
+        <group level="VIEW" name="只能看">
+            <permission>crud-create</permission>
+        </group>
+        <group level="EDIT" name="可以调整">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+        </group>
+        <group level="EDIT" name="管理员">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+    </permissions>
+</page>

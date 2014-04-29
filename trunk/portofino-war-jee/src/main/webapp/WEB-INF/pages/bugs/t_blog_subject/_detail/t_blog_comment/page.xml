@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="t blog comment" id="502ed2s304bprhy753f2qj21v" navigationRoot="INHERIT" title="t blog comment">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

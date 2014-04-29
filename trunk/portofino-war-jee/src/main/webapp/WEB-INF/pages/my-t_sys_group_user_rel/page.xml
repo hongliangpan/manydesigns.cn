@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="my t sys group user rel" id="u7cfcihbebi2aqtjaih5atjxc" title="my t sys group user rel">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group level="DENY" name="anonymous"/>
+    </permissions>
+</page>

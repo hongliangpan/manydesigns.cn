@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="辐射饼图" id="zzyjrqfy18cxpq1oc2fliu0qh" navigationRoot="INHERIT" title="辐射饼图">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

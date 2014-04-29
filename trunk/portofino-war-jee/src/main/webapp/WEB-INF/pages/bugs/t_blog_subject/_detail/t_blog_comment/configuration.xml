@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 回复" database="riil_its_board" editTitle="编辑 回复" largeResultSet="false" name="t_blog_comment" query="from t_blog_comment where c_subject_id = %{#t_blog_subject.c_id} order by id desc" readTitle="查看 回复" rowsPerPage="10" searchTitle="Search 回复" variable="t_blog_comment">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="主题" name="c_subject_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="评论内容" name="c_body" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="发起用户" name="c_author" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="状态" name="c_state_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="附件1" name="c_attachment1" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="附件2" name="c_attachment2" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="附件3" name="c_attachment3" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="附件4" name="c_attachment4" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="附件5" name="c_attachment5" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="附件6" name="c_attachment6" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建用户" name="c_create_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建时间" name="c_create_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改用户" name="c_modify_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改时间" name="c_modify_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" fk="fk_blog_subject" searchDisplayMode="DROPDOWN"/>
+    </selectionProviders>
+</configuration>

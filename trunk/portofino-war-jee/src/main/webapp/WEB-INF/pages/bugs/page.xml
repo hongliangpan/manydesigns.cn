@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="需求管理" id="y4v35hu8uk5xlhn8ichrs0u7a" navigationRoot="INHERIT" title="需求管理">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_blog_subject" showInNavigation="true"/>
+            <childPage name="bugs_line" showInNavigation="true"/>
+            <childPage name="t_blogd_forum" showInNavigation="true"/>
+            <childPage name="t_blogd_type" showInNavigation="true"/>
+            <childPage name="t_blogd_state" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions>
+        <group level="DEVELOP" name="super">
+            <permission>permission.text.edit</permission>
+        </group>
+        <group level="VIEW" name="只能看"/>
+        <group level="EDIT" name="可以调整">
+            <permission>permission.text.edit</permission>
+        </group>
+        <group level="EDIT" name="管理员">
+            <permission>permission.text.edit</permission>
+        </group>
+    </permissions>
+</page>

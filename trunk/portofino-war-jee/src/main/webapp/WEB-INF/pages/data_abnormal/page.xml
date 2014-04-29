@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="异常数据分析" id="4xs08i5ryamwstlvh2zhpj6ap" navigationRoot="INHERIT" title="异常数据分析">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="column2-layout">
+        <childPages>
+            <childPage container="default" name="abnormalRegion" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Left" name="abnormalState" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Right" name="abnormalYear" order="0" showInNavigation="true"/>
+            <childPage container="default1" name="abnormalRegion6" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Left1" name="abnormalState6" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Right1" name="abnormalYear6" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Left1" name="complaintRegion" order="1" showInNavigation="true"/>
+            <childPage container="contentLayout2Left1" name="abnormalTypeABC" order="2" showInNavigation="true"/>
+            <childPage container="contentLayout2Right1" name="abnormalIndustry" order="1" showInNavigation="true"/>
+            <childPage container="contentLayout2Right1" name="complaintYear" order="2" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

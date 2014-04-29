@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create t project module" database="riil_its_board" editTitle="Edit t project module" largeResultSet="false" name="t_project_module" query="from t_project_module where c_module_id = %{#t_dict_module.c_id} order by id desc" readTitle="t project module" rowsPerPage="10" searchTitle="Search t project module" variable="t_project_module">
+    <properties>
+        <property enabled="true" inSummary="true" insertable="true" label="" name="c_project_id" searchable="true" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="" name="c_module_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

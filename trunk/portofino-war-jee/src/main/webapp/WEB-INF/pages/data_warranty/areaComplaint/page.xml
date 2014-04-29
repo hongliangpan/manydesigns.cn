@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="区域投诉" id="sczhtnlozvdht1r2ad9aa9klp" navigationRoot="INHERIT" title="区域投诉">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default-only-center">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

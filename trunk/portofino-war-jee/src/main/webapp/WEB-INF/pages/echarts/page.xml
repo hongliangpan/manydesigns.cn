@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="动态图表" id="r95h89b9l0gnqzf19zsidwbrp" navigationRoot="INHERIT" title="动态图表">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage container="default" name="pie" order="0" showInNavigation="false"/>
+            <childPage container="default" name="ring" order="0" showInNavigation="false"/>
+            <childPage name="warranty" showInNavigation="false"/>
+            <childPage name="areaComplaint" showInNavigation="false"/>
+            <childPage name="mapMoney" showInNavigation="false"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

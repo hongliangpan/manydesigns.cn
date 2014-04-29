@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="部署模块" id="8g11xiwozf7ga0leula9anxfq" navigationRoot="INHERIT" title="部署模块">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="registered">
+            <permission>m2m-update</permission>
+        </group>
+    </permissions>
+</page>

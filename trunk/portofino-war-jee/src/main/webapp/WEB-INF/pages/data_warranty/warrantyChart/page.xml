@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="维保数据与客户状态" id="1o0211mp661taows0et564bbn" navigationRoot="INHERIT" title="维保数据与客户状态">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

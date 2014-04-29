@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2005-2013 ManyDesigns srl
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+      version="3.0">
+    <display-name>ManyDesigns Portofino</display-name>
+    <description>ManyDesigns Portofino</description>
+    
+<!-- 	<filter>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter> -->
+    <servlet>
+	    <servlet-name>ImageServlet</servlet-name>
+	    <servlet-class>net.sf.jasperreports.j2ee.servlets.ImageServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>ImageServlet</servlet-name>
+	    <url-pattern>/image</url-pattern>
+	</servlet-mapping>
+    
+    <servlet>
+	    <servlet-name>PdfReportServlet</servlet-name>
+	    <servlet-class>com.manydesigns.portofino.report.demo.PdfReportServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>PdfReportServlet</servlet-name>
+	    <url-pattern>/PdfReportServlet</url-pattern>
+	</servlet-mapping>
+    
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

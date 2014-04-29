@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 开发项目信息" database="riil_its_board" editTitle="Edit 开发项目信息" largeResultSet="false" name="t_pm_project" query="from t_pm_project order by id desc" readTitle="开发项目信息" rowsPerPage="10" searchTitle="Search 开发项目信息" variable="t_pm_project">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="编码" name="c_code" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="客户ID" name="c_customer_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="项目全称" name="c_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="项目简称" name="c_short_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="项目经理" name="c_pm_dev" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="实施经理" name="c_pm_impl" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="巴长" name="c_pm_amoeba" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="下单人天" name="c_order_days" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="项目类型" name="c_category" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="开发状态" name="c_dev_state" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="项目状态" name="c_state" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="订单时间" name="c_order_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="项目金额(万元)" name="c_money" searchable="false" updatable="true">
+            <annotations>
+                <annotation type="com.manydesigns.elements.annotations.UpdatableByRole">
+                    <value>edit.field.all</value>
+                </annotation>
+            </annotations>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="开工时间" name="c_begin_date" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="竣工时间" name="c_end_date" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="true" label="其它信息" name="c_info" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建用户" name="c_create_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="创建时间" name="c_create_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改用户" name="c_modify_user" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="修改时间" name="c_modify_time" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段1" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段2" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段3" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段4" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="project_category"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="project_dev_state"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="project_pm_selelct"/>
+    </selectionProviders>
+</configuration>

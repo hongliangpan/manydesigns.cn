@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="维保与过期" id="n3w1tyq7caafnlraopvfacqkc" navigationRoot="INHERIT" title="维保与过期">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default-only-center">
+        <childPages>
+            <childPage container="default" name="warrantyRate" order="0" showInNavigation="true"/>
+            <childPage name="warrantyChart" showInNavigation="true"/>
+            <childPage container="default" name="echarts_warranty" order="0" showInNavigation="true"/>
+            <childPage name="areaComplaint" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

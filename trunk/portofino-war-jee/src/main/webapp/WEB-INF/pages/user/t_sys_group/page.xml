@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="工作组管理" id="k1vqdc9niwip8urc4scacz38h" navigationRoot="INHERIT" title="工作组管理">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="group_user" order="0" showInNavigation="false"/>
+            <childPage name="mm_group_region_select" showInNavigation="false"/>
+            <childPage container="default" name="t_sys_group_region_rel" order="0" showInNavigation="false"/>
+            <childPage name="t_sys_group_user_rel" showInNavigation="false"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="管理员">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+    </permissions>
+</page>

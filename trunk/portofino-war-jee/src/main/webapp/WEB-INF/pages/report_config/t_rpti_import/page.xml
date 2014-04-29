@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="数据导入--通用数据导入，根据sql及excel文件，自动导入" id="rhu3pa4u7ejpkb8tjmazm0lvy" navigationRoot="INHERIT" title="数据导入">
+    <detailLayout template="default">
+        <childPages>
+            <childPage name="t_rpti_import_log" showInNavigation="true"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

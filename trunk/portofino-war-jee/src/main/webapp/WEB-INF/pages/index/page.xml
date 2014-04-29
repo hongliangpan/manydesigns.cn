@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="系统概览" id="qxptbrnqdp194s3i7h4gxt0w7" navigationRoot="INHERIT" title="系统概览">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage container="default" name="template_map" order="0" showInNavigation="false"/>
+            <childPage container="default" name="indexCustomerMoney" order="0" showInNavigation="false"/>
+            <childPage container="default" name="customer_map" order="0" showInNavigation="false"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="工作组 管理区域选择" id="djvxr7w5xrq5znv1a9hwds8xh" navigationRoot="INHERIT" title="管理区域">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

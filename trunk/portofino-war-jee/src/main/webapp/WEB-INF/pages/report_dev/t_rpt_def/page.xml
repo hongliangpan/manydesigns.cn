@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="报表定义" id="0s9y2izihys9pt8rq89u9u3td" navigationRoot="INHERIT" title="报表定义">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="t_rpt_def_field" order="0" showInNavigation="false"/>
+            <childPage container="default" name="t_rpt_def_param" order="0" showInNavigation="false"/>
+            <childPage container="default" name="t_rpt_def_period" order="0" showInNavigation="false"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

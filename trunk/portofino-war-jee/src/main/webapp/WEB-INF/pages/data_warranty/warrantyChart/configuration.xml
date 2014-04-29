@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="state" name="维保数据与客户状态" orientation="VERTICAL" query="SELECT MONTH(c_warranty_end) c_x,c.c_region3 c_y,COUNT(0) c_value,CONCAT(MONTH(c_warranty_end),'月') c_x_lable, c.c_region3 c_y_lable FROM t_customer c&#xD;&#xA; WHERE YEAR(c_warranty_end)=YEAR(NOW()) AND 1=1 GROUP BY c.c_region3,MONTH(c_warranty_end) ORDER BY MONTH(c_warranty_end),c.c_region3" type="BAR3D_LARGE" urlExpression=""/>

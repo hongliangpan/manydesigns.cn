@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<email from="example@example.com" subject="确认注册">
+    <htmlBody>&lt;p&gt;有人在 http://127.0.0.1:8080,使用这个电子邮件地址创建一个帐户.&lt;/p&gt;
+&lt;p&gt;如果是您本人请求注册账号,请按照这个链接启用帐户: &lt;a href=&quot;http://127.0.0.1:8080/login?confirmSignUp=&amp;amp;token=2vn1r0nj9jexg8tsiiyg&quot;&gt;http://127.0.0.1:8080/login?confirmSignUp=&amp;amp;token=2vn1r0nj9jexg8tsiiyg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;否则,请忽略此邮件; 此帐户将无法访问,最终将从我们的系统删除.&lt;/p&gt;</htmlBody>
+    <recipients address="3332@co333.com" type="TO"/>
+</email>

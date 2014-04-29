@@ -1,0 +1,601 @@
+<table tableName="v_project200">
+	<annotations />
+	<columns>
+		<column autoincrement="true" columnName="c_c_id" columnType="INT" jdbcType="4" length="10" nullable="false"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_code" columnType="VARCHAR" jdbcType="12" length="36" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>36</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_name" columnType="VARCHAR" jdbcType="12" length="200" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ColSpan">
+					<value>2</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.CssClass">
+					<value>colSpan_2</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.FieldSet">
+					<value>基本信息</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_short_name" columnType="VARCHAR" jdbcType="12" length="200"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_region1" columnType="VARCHAR" jdbcType="12" length="40" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_region2" columnType="VARCHAR" jdbcType="12" length="40" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_region3" columnType="VARCHAR" jdbcType="12" length="40" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_industry1" columnType="VARCHAR" jdbcType="12" length="40"
+			nullable="false" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_industry2" columnType="VARCHAR" jdbcType="12" length="80"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>80</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_money" columnType="FLOAT" jdbcType="7" length="11" nullable="true"
+			scale="2">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_pm" columnType="VARCHAR" jdbcType="12" length="60" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>60</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_tag1" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_tag2" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_pmb" columnType="VARCHAR" jdbcType="12" length="60" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>60</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_abnormal" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_memo" columnType="TEXT" jdbcType="-1" length="65535" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+				<annotation type="com.manydesigns.elements.annotations.ColSpan">
+					<value>3</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.CssClass">
+					<value>colSpan_3</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>65535</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.Multiline">
+					<value>true</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_state" columnType="INT" jdbcType="4" length="10" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.FieldSet">
+					<value>客户使用信息</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_warranty" columnType="VARCHAR" jdbcType="12" length="20"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.FieldSet">
+					<value>客户使用信息</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>20</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_warranty_end" columnType="DATE" jdbcType="91" length="10"
+			nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_is_expired" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_client_aspiration" columnType="VARCHAR" jdbcType="12" length="40"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_template" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_template_boutique" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_memo2" columnType="TEXT" jdbcType="-1" length="65535" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>65535</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.Multiline">
+					<value>true</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_difficult" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_good" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_is_template_conditions" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_version1" columnType="VARCHAR" jdbcType="12" length="40"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_version2" columnType="VARCHAR" jdbcType="12" length="40"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>40</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_is_develop" columnType="TINYINT" javaType="java.lang.Boolean"
+			jdbcType="-6" length="3" nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_develop_info" columnType="VARCHAR" jdbcType="12" length="4000"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ColSpan">
+					<value>2</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.CssClass">
+					<value>colSpan_2</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>4000</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.Multiline">
+					<value>true</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_itsm_level" columnType="VARCHAR" jdbcType="12" length="10"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.FieldSet">
+					<value>客户运维情况</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>10</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_itsm_number" columnType="VARCHAR" jdbcType="12" length="10"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>10</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_itsm_mode" columnType="VARCHAR" jdbcType="12" length="10"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>10</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_itsm_software" columnType="VARCHAR" jdbcType="12" length="4000"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.FieldSet">
+					<value>客户运维情况</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.ColSpan">
+					<value>3</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.CssClass">
+					<value>colSpan_3</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>4000</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.Multiline">
+					<value>true</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_itsm_attachment" columnType="VARCHAR" jdbcType="12" length="100"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>100</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.RichText">
+					<value>true</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.HighlightLinks">
+					<value>true</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.FileBlob" />
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_info" columnType="VARCHAR" jdbcType="12" length="4000" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.ForceNewRow" />
+				<annotation type="com.manydesigns.elements.annotations.ColSpan">
+					<value>3</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>4000</value>
+				</annotation>
+				<annotation type="com.manydesigns.elements.annotations.RichText">
+					<value>true</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_config" columnType="VARCHAR" jdbcType="12" length="500" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>500</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_tag3" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_tag4" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_create_user" columnType="VARCHAR" jdbcType="12" length="20"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>20</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_create_time" columnType="DATETIME" jdbcType="93" length="19"
+			nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_c_modify_user" columnType="VARCHAR" jdbcType="12" length="20"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>20</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_c_modify_time" columnType="TIMESTAMP" jdbcType="93" length="19"
+			nullable="false" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="true" columnName="c_id" columnType="INT" jdbcType="4" length="10" nullable="false"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_code" columnType="VARCHAR" jdbcType="12" length="36" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>36</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_customer_id" columnType="INT" jdbcType="4" length="10" nullable="false"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_name" columnType="VARCHAR" jdbcType="12" length="200" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_short_name" columnType="VARCHAR" jdbcType="12" length="200"
+			nullable="true" scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_category" columnType="VARCHAR" jdbcType="12" length="10" nullable="false"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>10</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_pm" columnType="VARCHAR" jdbcType="12" length="60" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>60</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_money" columnType="FLOAT" jdbcType="7" length="11" nullable="true"
+			scale="2">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_order_time" columnType="DATE" jdbcType="91" length="10" nullable="true"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_begin_date" columnType="DATE" jdbcType="91" length="10" nullable="true"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_end_date" columnType="DATE" jdbcType="91" length="10" nullable="true"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_state" columnType="INT" jdbcType="4" length="10" nullable="true"
+			scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_info" columnType="VARCHAR" jdbcType="12" length="4000" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>4000</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_config" columnType="VARCHAR" jdbcType="12" length="500" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>500</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_tag1" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_tag2" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_tag3" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_tag4" columnType="VARCHAR" jdbcType="12" length="200" nullable="true"
+			scale="0">
+			<annotations>
+				<annotation type="com.manydesigns.elements.annotations.MaxLength">
+					<value>200</value>
+				</annotation>
+			</annotations>
+		</column>
+		<column autoincrement="false" columnName="c_create_user" columnType="VARCHAR" jdbcType="12" length="20"
+			nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_create_time" columnType="DATETIME" jdbcType="93" length="19"
+			nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_modify_user" columnType="VARCHAR" jdbcType="12" length="20"
+			nullable="true" scale="0">
+			<annotations />
+		</column>
+		<column autoincrement="false" columnName="c_modify_time" columnType="TIMESTAMP" jdbcType="93" length="19"
+			nullable="false" scale="0">
+			<annotations />
+		</column>
+	</columns>
+	<foreignKeys>
+		<foreignKey onDelete="importedKeyCascade" onUpdate="importedKeyNoAction" toSchema="itsboard200" toTable="t_customer"
+			hql="from t_customer" name="vfk_project_customer_id" toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_customer_id" toColumn="c_id" />
+			</references>
+		</foreignKey>
+	</foreignKeys>
+	<primaryKey>
+		<column columnName="c_id" />
+	</primaryKey>
+	<selectionProviders>
+		<query hql="" name="region123" sql="select c_region1,c_region1,c_region2,c_region2,c_region3,c_region3 from t_dict_region"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_region1" />
+				<reference fromColumn="c_c_region2" />
+				<reference fromColumn="c_c_region3" />
+			</references>
+		</query>
+		<query hql="" name="industry12"
+			sql="SELECT c_type1 c_industry1,c_type1 c_industry1, c_type2 c_industry2, c_type2 c_industry2 FROM t_dict_industry&#xD;&#xA;ORDER BY c_sort_id"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_industry1" />
+				<reference fromColumn="c_c_industry2" />
+			</references>
+		</query>
+		<query hql="" name="状态" sql="SELECT c_id, c_name FROM t_dict_state ORDER BY c_sort_id" toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_state" />
+			</references>
+		</query>
+		<query hql="" name="客户意愿"
+			sql="SELECT '有意愿' AS id, '有意愿' AS NAME FROM DUAL&#xD;&#xA;UNION&#xD;&#xA;SELECT '无意愿' AS id, '无意愿' AS NAME FROM DUAL&#xD;&#xA;UNION&#xD;&#xA;SELECT '未知' AS id, '未知' AS NAME FROM DUAL"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_client_aspiration" />
+			</references>
+		</query>
+		<query hql="" name="Riil版本"
+			sql="select c_version,c_version from t_dict_version WHERE c_product='RIIL' order by c_version asc" toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_version1" />
+			</references>
+		</query>
+		<query hql="" name="Bmc版本" sql="select c_version,c_version from t_dict_version WHERE c_product='BMC' order by c_version asc"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_version2" />
+			</references>
+		</query>
+		<query hql="" name="客户运维水平"
+			sql="SELECT '高' AS id, '高' AS NAME FROM DUAL&#xD;&#xA;UNION&#xD;&#xA;SELECT '中' AS id, '中' AS NAME FROM DUAL&#xD;&#xA;UNION&#xD;&#xA;SELECT '低' AS id, '低' AS NAME FROM DUAL"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_itsm_level" />
+			</references>
+		</query>
+		<query hql="" name="合同总额"
+			sql="SELECT c_customer_id,SUM(c_money) FROM t_project WHERE c_customer_id&#xD;&#xA;=%{#t_customer.c_id} GROUP BY c_customer_id"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_money" />
+			</references>
+		</query>
+		<query hql="" name="是否" sql="SELECT 0, '否' FROM DUAL &#xD;&#xA;UNION &#xD;&#xA;SELECT 1, '是' FROM DUAL"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_c_is_abnormal" />
+			</references>
+		</query>
+		<query hql="" name="项目类型"
+			sql="SELECT 'A类' AS id, 'A类' AS NAME FROM DUAL&#xD;&#xA;UNION&#xD;&#xA;SELECT 'B类' AS id, 'B类' AS NAME FROM DUAL&#xD;&#xA;UNION &#xD;&#xA;SELECT 'C类' AS id, 'C类' AS NAME FROM DUAL"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_category" />
+			</references>
+		</query>
+		<query hql="" name="状态" sql="SELECT c_id,c_name FROM t_dict_state ORDER BY c_sort_id" toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_state" />
+			</references>
+		</query>
+		<query hql="" name="project_pm_selelct" sql="SELECT c_id,IFNULL(c_display_name,c_name) c_name FROM t_sys_user WHERE c_id&gt;0"
+			toDatabase="riil_its_board">
+			<references>
+				<reference fromColumn="c_pm" />
+			</references>
+		</query>
+	</selectionProviders>
+</table>

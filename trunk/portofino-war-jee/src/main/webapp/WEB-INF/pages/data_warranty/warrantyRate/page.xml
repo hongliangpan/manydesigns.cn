@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="维保率分析" id="4onalvxw9nig59lhem4z70yww" navigationRoot="INHERIT" title="维保率分析">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default-only-center">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

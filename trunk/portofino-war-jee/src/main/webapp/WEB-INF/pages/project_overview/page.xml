@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="ITS项目概况" id="ujcjwl4m14m0dea9e91wm83n8" navigationRoot="INHERIT" title="项目概况">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage container="default" name="project_overview_data_normal" order="0" showInNavigation="true"/>
+            <childPage container="default" name="project_overview_data_abnormal" order="0" showInNavigation="true"/>
+            <childPage container="default" name="project_overview_data_warranty" order="0" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions>
+        <group level="VIEW" name="registered"/>
+        <group level="VIEW" name="administrators"/>
+    </permissions>
+</page>

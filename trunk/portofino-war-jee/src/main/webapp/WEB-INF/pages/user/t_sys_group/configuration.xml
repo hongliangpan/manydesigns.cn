@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 工作组" database="riil_its_board" editTitle="Edit 工作组" largeResultSet="false" name="t_sys_group" query="from t_sys_group where c_id&gt;0 order by c_id desc" readTitle="工作组" rowsPerPage="10" searchTitle="Search 工作组" variable="t_sys_group">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="ID" name="c_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="名称" name="c_name" searchable="true" updatable="false">
+            <annotations>
+                <annotation type="com.manydesigns.elements.annotations.UpdatableByRole">
+                    <value>edit.all</value>
+                </annotation>
+            </annotations>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="显示名称" name="c_display_name" searchable="true" updatable="false">
+            <annotations>
+                <annotation type="com.manydesigns.elements.annotations.UpdatableByRole">
+                    <value>edit.all</value>
+                </annotation>
+            </annotations>
+        </property>
+        <property enabled="false" inSummary="true" insertable="true" label="区域级别" name="c_region_level" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="备注" name="c_desc" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="显示顺序" name="c_sort_id" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="false" insertable="true" label="字段权限" name="c_role" searchable="false" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="备用字段" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="创建用户" name="c_create_user" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="创建时间" name="c_create_time" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="修改用户" name="c_modify_user" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="修改时间" name="c_modify_time" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="group_role"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="group_region_level"/>
+    </selectionProviders>
+</configuration>

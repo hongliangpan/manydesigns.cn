@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create 周期类型" database="riil_its_board" editTitle="Edit 周期类型" largeResultSet="false" name="t_rptd_period_type" query="from t_rptd_period_type order by c_sort_id" readTitle="周期类型" rowsPerPage="10" searchTitle="Search 周期类型" variable="t_rptd_period_type">
+    <properties>
+        <property enabled="true" inSummary="true" insertable="true" label="编码" name="c_id" searchable="true" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="周期" name="c_name" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="是否启用" name="c_is_enabled" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="数据表名后缀，如_xx，替换为1h,6h,1d,1w," name="c_table_suffix" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+		<property enabled="true" inSummary="true" insertable="true" label="顺序" name="c_sort_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段" name="c_tag1" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段" name="c_tag2" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段" name="c_tag3" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="冗余字段" name="c_tag4" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="顺序" name="c_sort_id" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="客户项目管理" id="lx9x8wur6xxtcct9xkqbmam9b" navigationRoot="INHERIT" title="客户项目管理">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_customer" showInNavigation="true"/>
+            <childPage name="vproject" showInNavigation="true"/>
+            <childPage name="project_info" showInNavigation="true"/>
+            <childPage name="line_customer" showInNavigation="true"/>
+            <childPage name="customer_pm" showInNavigation="true"/>
+            <childPage name="customer_warranty" showInNavigation="true"/>
+            <childPage name="customer_complaint" showInNavigation="true"/>
+            <childPage name="project_order" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

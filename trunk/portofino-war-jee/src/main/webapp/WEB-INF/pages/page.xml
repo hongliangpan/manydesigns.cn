@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="portofino 4" id="root" navigationRoot="GHOST_ROOT" title="Portofino4">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="index" showInNavigation="true"/>
+            <childPage name="project_overview" showInNavigation="false"/>
+            <childPage name="line3" showInNavigation="true"/>
+            <childPage name="data_normal" showInNavigation="true"/>
+            <childPage name="data_abnormal" showInNavigation="true"/>
+            <childPage name="data_warranty" showInNavigation="true"/>
+            <childPage name="line1" showInNavigation="true"/>
+            <childPage name="customer_matrix" showInNavigation="true"/>
+            <childPage name="project_matrix" showInNavigation="true"/>
+            <childPage name="line1" showInNavigation="true"/>
+            <childPage name="echarts" showInNavigation="true"/>
+            <childPage name="dict" showInNavigation="false"/>
+            <childPage name="line2" showInNavigation="true"/>
+            <childPage name="bugs" showInNavigation="false"/>
+            <childPage name="daily" showInNavigation="false"/>
+            <childPage name="user" showInNavigation="false"/>
+            <childPage name="tools" showInNavigation="false"/>
+            <childPage name="welcome" showInNavigation="false"/>
+            <childPage name="login" showInNavigation="false"/>
+            <childPage name="calendar-riil_its_board" showInNavigation="true"/>
+            <childPage name="customer" showInNavigation="false"/>
+            <childPage name="report_config" showInNavigation="true"/>
+            <childPage name="report" showInNavigation="true"/>
+            <childPage name="report_dev" showInNavigation="true"/>
+            <childPage name="t_sys_seq" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions>
+        <group level="DEVELOP" name="super"/>
+        <group level="NONE" name="anonymous"/>
+        <group level="VIEW" name="只能看"/>
+        <group level="EDIT" name="registered"/>
+        <group level="DEVELOP" name="administrators"/>
+        <group level="EDIT" name="可以调整"/>
+        <group level="EDIT" name="管理员"/>
+        <group level="VIEW" name="all"/>
+    </permissions>
+</page>

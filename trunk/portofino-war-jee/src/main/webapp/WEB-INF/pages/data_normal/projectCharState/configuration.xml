@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="t" name="项目状态图" orientation="HORIZONTAL" query="select IFNULL(s.c_name,'未知') c_state,count(0) c_count from t_project p &#xD;&#xA;INNER JOIN t_customer c ON c.c_id=p.c_customer_id&#xD;&#xA;LEFT JOIN t_dict_state s ON p.c_state=s.c_id &#xD;&#xA;WHERE 1=1&#xD;&#xA;GROUP BY s.c_id ORDER BY s.c_sort_id" type="PIE" urlExpression="/m/chart/data_detail.jsp?table=t_project&amp;type=project_state&amp;key=%{key}"/>

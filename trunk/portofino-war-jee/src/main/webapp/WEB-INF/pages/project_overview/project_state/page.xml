@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="按项目状态统计" id="vh9hihes1ezqlckovkyy6g9v0" navigationRoot="INHERIT" title="按项目状态统计">
+    <detailLayout>
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

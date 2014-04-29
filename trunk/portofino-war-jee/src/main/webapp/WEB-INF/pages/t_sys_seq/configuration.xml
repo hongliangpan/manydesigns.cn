@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create " database="riil_its_board" editTitle="Edit " largeResultSet="false" name="t_sys_seq" query="from t_sys_seq order by id desc" readTitle="" rowsPerPage="10" searchTitle="Search " variable="t_sys_seq">
+    <properties>
+        <property enabled="true" inSummary="true" insertable="true" label="" name="c_name" searchable="true" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="" name="c_value" searchable="true" updatable="true">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders/>
+</configuration>

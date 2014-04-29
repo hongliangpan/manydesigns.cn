@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" oneExpression="#t_rpt.c_id" onePropertyName="c_rpt_id" query="from t_rpt_period" viewType="CHECKBOXES">
+    <one enabled="true" fk="fk_rpt_period_id"/>
+</configuration>

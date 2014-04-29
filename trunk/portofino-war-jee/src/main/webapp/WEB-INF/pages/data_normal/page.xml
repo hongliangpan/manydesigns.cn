@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="常规数据分析" id="3ove7dvhzrtzv0vubiywrhhaj" navigationRoot="INHERIT" title="常规数据分析">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="column2-layout">
+        <childPages>
+            <childPage container="contentLayout2Left" name="projectCharState" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Right" name="projectCharTypeABC" order="0" showInNavigation="true"/>
+            <childPage container="contentLayout2Left" name="projectCharIndustry" order="1" showInNavigation="true"/>
+            <childPage container="contentLayout2Right" name="projectCharIndustry2" order="1" showInNavigation="true"/>
+            <childPage container="contentLayout2Left" name="customerChartState" order="2" showInNavigation="true"/>
+            <childPage container="contentLayout2Right" name="customerChartModule" order="2" showInNavigation="true"/>
+            
+            
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

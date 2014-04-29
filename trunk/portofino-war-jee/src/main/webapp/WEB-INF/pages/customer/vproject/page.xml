@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="项目视图" id="gkvevahcc7dupzseikhofgrum" navigationRoot="INHERIT" title="项目视图">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group level="VIEW" name="super"/>
+        <group level="VIEW" name="只能看"/>
+        <group level="VIEW" name="registered"/>
+        <group level="VIEW" name="administrators"/>
+        <group level="VIEW" name="可以调整"/>
+        <group level="VIEW" name="管理员"/>
+    </permissions>
+</page>

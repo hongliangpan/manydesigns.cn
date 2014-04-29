@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="state" name="项目细分图" orientation="HORIZONTAL" query="SELECT  CASE WHEN (c.c_industry2 IS NULL OR c.c_industry2='') THEN '未知' ELSE c.c_industry2 END c_industry2,&#xD;&#xA;count(p.c_id) c_count from t_project p &#xD;&#xA;INNER JOIN t_customer c ON p.c_customer_id=c.c_id &#xD;&#xA;LEFT JOIN t_dict_industry i ON c.c_industry2=i.c_type2&#xD;&#xA;WHERE 1=1&#xD;&#xA;GROUP BY c.c_industry2 ORDER BY i.c_sort_id" type="PIE3D" urlExpression=""/>

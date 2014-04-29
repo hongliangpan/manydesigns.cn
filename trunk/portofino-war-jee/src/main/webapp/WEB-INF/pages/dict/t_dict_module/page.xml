@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="RIIL模块" id="pxs7vl3tdv1q6oqngjwnaarv1" navigationRoot="INHERIT" title="RIIL模块">
+    <detailLayout template="default">
+        <childPages>
+            <childPage name="t_project_module" showInNavigation="true"/>
+            <childPage name="t_project_module_hot" showInNavigation="true"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="registered">
+            <permission>crud-create</permission>
+            <permission>crud-edit</permission>
+            <permission>crud-delete</permission>
+        </group>
+    </permissions>
+</page>

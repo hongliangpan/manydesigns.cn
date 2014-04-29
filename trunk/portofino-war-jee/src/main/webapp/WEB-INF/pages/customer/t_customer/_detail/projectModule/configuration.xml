@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" oneExpression="#t_customer.c_id" onePropertyName="c_customer_id" query="FROM t_project_module  where c_customer_id = %{#t_customer.c_id}" viewType="CHECKBOXES">
+    <many enabled="true" fk="fk_pm_module_id"/>
+    <one enabled="true" fk="fk_pm_customer_id"/>
+</configuration>

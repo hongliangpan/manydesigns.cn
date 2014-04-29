@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="报表管理" id="m5uur4bdpfbz1nz4yeohub909" navigationRoot="INHERIT" title="报表管理">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="t_rpt_field" order="0" showInNavigation="false"/>
+            <childPage container="default" name="t_rpt_param" order="0" showInNavigation="false"/>
+            <childPage container="default" name="t_rpt_period" order="0" showInNavigation="false"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

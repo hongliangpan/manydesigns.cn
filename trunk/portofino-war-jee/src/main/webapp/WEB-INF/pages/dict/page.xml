@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="字典管理" id="lckrtfl0vlsmfbd0guog141jh" navigationRoot="INHERIT" title="字典管理">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_dict_region" showInNavigation="true"/>
+            <childPage name="t_dict_industry" showInNavigation="true"/>
+            <childPage name="t_dict_module" showInNavigation="true"/>
+            <childPage name="t_dict_state" showInNavigation="true"/>
+            <childPage name="t_dict_version" showInNavigation="true"/>
+            <childPage name="t_dict_complaint" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

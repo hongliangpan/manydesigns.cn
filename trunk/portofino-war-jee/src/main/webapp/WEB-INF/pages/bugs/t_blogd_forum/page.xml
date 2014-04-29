@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="系统字典" id="rf0oa6iji9ja1cduvh5lekzdv" navigationRoot="INHERIT" title="系统模块">
+    <detailLayout template="default">
+        <childPages>
+            <childPage container="default" name="t_blogd_module" order="0" showInNavigation="true"/>
+        </childPages>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions/>
+</page>

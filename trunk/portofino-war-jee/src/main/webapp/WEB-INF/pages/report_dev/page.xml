@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="报表开发" id="bkjuvb1kctfl198jbgj29bnhr" navigationRoot="INHERIT" title="报表开发">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_rpt_def" showInNavigation="true"/>
+            <childPage name="t_rpt_type" showInNavigation="true"/>
+            <childPage name="line_report" showInNavigation="true"/>
+            <childPage name="t_rptd_field_map" showInNavigation="true"/>
+            <childPage name="t_rptd_display_type" showInNavigation="true"/>
+            <childPage name="t_rptd_data_type" showInNavigation="true"/>
+            <childPage name="t_rptd_period_type" showInNavigation="true"/>
+            <childPage name="line_report2" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

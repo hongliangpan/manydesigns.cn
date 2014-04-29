@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" legend="state" name="项目类型图" orientation="HORIZONTAL" query="select IFNULL(p.c_category,'未知') c_category ,count(0) c_count from t_project p &#xD;&#xA;INNER JOIN t_customer c ON p.c_customer_id=c.c_id&#xD;&#xA;WHERE 1=1&#xD;&#xA;GROUP BY p.c_category ORDER BY p.c_category" type="PIE" urlExpression=""/>

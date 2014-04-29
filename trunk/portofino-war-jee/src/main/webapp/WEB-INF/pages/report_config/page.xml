@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="报表配置" id="wqn4y3fqkqp74it9mgf7uqe04" navigationRoot="INHERIT" title="报表配置">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages>
+            <childPage name="t_rpt" showInNavigation="true"/>
+            <childPage name="t_rpt_subscribe" showInNavigation="true"/>
+            <childPage name="t_rpt_group" showInNavigation="true"/>
+            <childPage name="line_report3" showInNavigation="true"/>
+            <childPage name="t_rptl_gen_log" showInNavigation="true"/>
+            <childPage name="t_rptl_send_og" showInNavigation="true"/>
+            <childPage name="line_data" showInNavigation="true"/>
+            <childPage name="t_rpti_import" showInNavigation="true"/>
+        </childPages>
+    </layout>
+    <permissions/>
+</page>

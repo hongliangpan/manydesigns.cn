@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration database="riil_its_board" oneExpression="#t_sys_user.c_id" onePropertyName="c_user_id" query="FROM t_sys_group_user_rel  where c_user_id = %{#t_sys_user.c_id}" viewType="CHECKBOXES">
+    <many enabled="true" fk="fk_sgu_group_id"/>
+    <one enabled="true" fk="fk_sgu_user_id"/>
+</configuration>

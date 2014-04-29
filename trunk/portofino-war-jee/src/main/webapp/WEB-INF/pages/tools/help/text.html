@@ -1,0 +1,967 @@
+<p>看板</p>
+
+<p>2013年11月8日</p>
+
+<p>11:29</p>
+
+<p>&nbsp;</p>
+
+<p><strong>一、展示面板需求</strong></p>
+
+<p>1、看板显示时，实施状态顺序固定、订单时间排序有问题（售后、待验收、实施中、未启动、挂起、无需实施）</p>
+
+<p>2、有无意愿要做一个标识</p>
+
+<p>3、选择区域的时候要按照大区可选择，北区、南区、西区</p>
+
+<p><strong>固定视图，在现有基础上，加几个固定图表展示</strong></p>
+
+<p><strong>1</strong><strong>、常规数据分析</strong></p>
+
+<p><strong>1</strong><strong>）项目状态图</strong><strong>------</strong><strong>最好是饼图（基于选择的区域统计）</strong></p>
+
+<p>1、一个饼图看状态</p>
+
+<p>2、一个饼图看类型</p>
+
+<p>==============================================</p>
+
+<p>3、一个饼图看行业</p>
+
+<p>4、一个饼图看细分</p>
+
+<p><strong>2</strong><strong>）客户使用状态图</strong><strong>------</strong><strong>横向柱状图</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 横轴：客户数量、转售后数量、转售后中有意愿数量、使用的好数量、样板数量、精品样板、</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 纵轴：数量</p>
+
+<p><strong>3</strong><strong>）现场产品功能应用分析</strong><strong>----</strong><strong>横向柱状图</strong></p>
+
+<p>&nbsp; &nbsp;&nbsp;横轴：各功能模块实际采购+用的较好2种颜色</p>
+
+<p>&nbsp;&nbsp;&nbsp; 纵轴：数量</p>
+
+<p><strong>2</strong><strong>、异常数据分析</strong></p>
+
+<p><strong>1</strong><strong>）开工</strong><strong>3</strong><strong>个月未竣工项目</strong></p>
+
+<p>&nbsp; 根据区域选择来，如果选择片区、大区则显示各区域的存在的数量柱状图+年限做饼图+项目类型饼图</p>
+
+<p><strong>2</strong><strong>）下单</strong><strong>6</strong><strong>个月未开工项目（同上）</strong></p>
+
+<p><strong>3</strong><strong>）客户投诉情况</strong></p>
+
+<p>&nbsp; 根据区域选择来，如果选择片区、大区则显示各区域的存在的数量柱状图（分2段，客户总数与投诉数量，上面显示百分比）+根据客户年限做投诉客户饼图+项目类型饼图</p>
+
+<p>投诉4张图</p>
+
+<ol>
+	<li>数量+加一个解决情况（客户）</li>
+	<li>不变（客户）</li>
+	<li>时间线为维度记录投诉总量及类型</li>
+</ol>
+
+<p><strong>3</strong><strong>、维保数据与客户状态</strong></p>
+
+<p>&nbsp;&nbsp; 横轴：区域</p>
+
+<p>&nbsp;&nbsp; 纵轴：按月为单位柱状统计分段统计维保到期客户，超一年的不做统计</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>详细信息，在现有基础上，加几个固定搜索项目</strong></p>
+
+<p>1）项目交付状态视图</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 纵轴：年</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 横轴：项目状态</p>
+
+<p>2）客户意愿视图</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 横轴：意愿</p>
+
+<p>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;纵轴：进入售后阶段的客户</p>
+
+<p>3）历往客户投诉视图</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 横轴：年</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 纵轴：投诉客户</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>二、信息录入需求</strong></p>
+
+<p>1、RIIL版本信息需更新--ok（TAC提供）</p>
+
+<p>2、项目信息编辑放到页面上方--ok</p>
+
+<p>3、省区码表需要修订-ok</p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:64px">
+			<p>片区</p>
+			</td>
+			<td style="width:64px">
+			<p>大区</p>
+			</td>
+			<td style="width:99px">
+			<p>省区</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>东北</p>
+			</td>
+			<td style="width:99px">
+			<p>大连</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>东北</p>
+			</td>
+			<td style="width:99px">
+			<p>黑龙江</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>东北</p>
+			</td>
+			<td style="width:99px">
+			<p>吉林</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>东北</p>
+			</td>
+			<td style="width:99px">
+			<p>辽宁</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>华北</p>
+			</td>
+			<td style="width:99px">
+			<p>河南</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>华北</p>
+			</td>
+			<td style="width:99px">
+			<p>湖北</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>华北</p>
+			</td>
+			<td style="width:99px">
+			<p>江西</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>华北</p>
+			</td>
+			<td style="width:99px">
+			<p>山西</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>津鲁</p>
+			</td>
+			<td style="width:99px">
+			<p>山东</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>津鲁</p>
+			</td>
+			<td style="width:99px">
+			<p>天津</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>京冀</p>
+			</td>
+			<td style="width:99px">
+			<p>北京</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>京冀</p>
+			</td>
+			<td style="width:99px">
+			<p>河北</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>北区</p>
+			</td>
+			<td style="width:64px">
+			<p>京冀</p>
+			</td>
+			<td style="width:99px">
+			<p>行业系统部</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>国际</p>
+			</td>
+			<td style="width:99px">
+			<p>国际</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华东</p>
+			</td>
+			<td style="width:99px">
+			<p>福建</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华东</p>
+			</td>
+			<td style="width:99px">
+			<p>厦门</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华南</p>
+			</td>
+			<td style="width:99px">
+			<p>广东</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华南</p>
+			</td>
+			<td style="width:99px">
+			<p>海南</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华南</p>
+			</td>
+			<td style="width:99px">
+			<p>深圳</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>安徽</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>湖南</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>江苏</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>上海</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>苏宁</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>南区</p>
+			</td>
+			<td style="width:64px">
+			<p>华中</p>
+			</td>
+			<td style="width:99px">
+			<p>浙江</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>甘肃</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>内蒙古</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>宁夏</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>青海</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>陕西</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西北</p>
+			</td>
+			<td style="width:99px">
+			<p>新疆</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>广西</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>贵州</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>四川</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>西藏</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>云南</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>西区</p>
+			</td>
+			<td style="width:64px">
+			<p>西南</p>
+			</td>
+			<td style="width:99px">
+			<p>重庆</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>4、行业码表需要修订-ok</p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:82px">
+			<p>行业</p>
+			</td>
+			<td style="width:143px">
+			<p>细分市场</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>金融</p>
+			</td>
+			<td style="width:143px">
+			<p>保险</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>银行</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>邮政集团</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>证券</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>SMB</p>
+			</td>
+			<td style="width:143px">
+			<p>酒店</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>网吧</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>政府</p>
+			</td>
+			<td style="width:143px">
+			<p>政务</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>公检法司</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>党务</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>央企</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>能源交通</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>军队</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>教育</p>
+			</td>
+			<td style="width:143px">
+			<p>校园网</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>实验室</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>企业</p>
+			</td>
+			<td style="width:143px">
+			<p>制造业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>现代服务业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>文化产业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>企业其他</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>运营商</p>
+			</td>
+			<td style="width:143px">
+			<p>电信运营商</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>互联网</p>
+			</td>
+			<td style="width:143px">
+			<p>大型互联网企业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>中小型互联网企业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>IDC企业</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>医疗</p>
+			</td>
+			<td style="width:143px">
+			<p>医院</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>区卫/基卫</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>公共事业</p>
+			</td>
+			<td style="width:143px">
+			<p>文化</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:82px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:143px">
+			<p>交通</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>===================================================================================================</p>
+
+<p><strong>一、客户信息</strong></p>
+
+<p>客户名称（原项目名称）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 片区 ：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大区：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 省区：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 行业：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 细分市场：</p>
+
+<p>客户负责人（原项目负责人）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 客户项目总金额（项目金额求和）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否异常客户（加备注）：</p>
+
+<p>&nbsp;</p>
+
+<p><strong>二、客户使用信息</strong></p>
+
+<p>客户状态（根据项目状态来）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 客户维保期：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 维保结束期：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否过保（自动计算）：</p>
+
+<p>客户意愿：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否样板客户：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否精品样板（备注）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否难点客户：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否用的好：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否具备样板条件：</p>
+
+<p>RIIL产品版本：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RMC产品版本：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否有二次开发：</p>
+
+<p>投诉列表：&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>客户是否有过投诉：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 投诉原因（选择加备注、商务、服务、产品、其它：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 投诉当前解决情况：</p>
+
+<p>客户是否有过投诉：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 投诉原因（选择加备注）：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 投诉当前解决情况：</p>
+
+<p>&nbsp;</p>
+
+<p><strong>三、项目信息</strong></p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:64px">
+			<p><strong>序号</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>项目名称</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>下单时间</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>项目金额</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>开工时间</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>竣工时间</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>项目类别</strong></p>
+			</td>
+			<td style="width:93px">
+			<p><strong>项目负责人</strong></p>
+			</td>
+			<td style="width:71px">
+			<p><strong>项目状态</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>1</p>
+			</td>
+			<td style="width:79px">
+			<p>Xxx</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>234</p>
+			</td>
+			<td style="width:79px">
+			<p>234</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:93px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:71px">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>2</p>
+			</td>
+			<td style="width:79px">
+			<p>xxx</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:79px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:93px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:71px">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong>四、下单信息</strong></p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:64px">
+			<p><strong>序号</strong></p>
+			</td>
+			<td style="width:79px">
+			<p><strong>项目名称</strong></p>
+			</td>
+			<td style="width:107px">
+			<p><strong>服务产品名称</strong></p>
+			</td>
+			<td style="width:64px">
+			<p><strong>数量</strong></p>
+			</td>
+			<td style="width:65px">
+			<p><strong>附件</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>1</p>
+			</td>
+			<td style="width:79px">
+			<p>Xxx</p>
+			</td>
+			<td style="width:107px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:64px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:65px">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:64px">
+			<p>2</p>
+			</td>
+			<td style="width:79px">
+			<p>xxx</p>
+			</td>
+			<td style="width:107px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:64px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:65px">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>五、常见使用功能</strong></p>
+
+<p>1、实际部署功能模块（打勾）</p>
+
+<p>2、客户常用功能模块（打勾）沿用原有数据</p>
+
+<p>&nbsp;</p>
+
+<p><strong>六、客户运维情况</strong></p>
+
+<p>客户运维水平（高、中、低）</p>
+
+<p>客户运维人员数量（）</p>
+
+<p>客户日常运维模式（）</p>
+
+<p>客户常用其它软件功能说明（可以插入附件）</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

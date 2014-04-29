@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration createTitle="Create t sys group region rel" database="riil_its_board" editTitle="Edit t sys group region rel" largeResultSet="false" name="t_sys_group_region_rel" query="from t_sys_group_region_rel where c_group_id = %{#t_sys_group.c_id} order by id desc" readTitle="t sys group region rel" rowsPerPage="10" searchTitle="Search t sys group region rel" variable="t_sys_group_region_rel">
+    <properties>
+        <property enabled="false" inSummary="false" insertable="false" label="工作组ID" name="c_group_id" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="true" inSummary="true" insertable="true" label="区域" name="c_region_id" searchable="true" updatable="false">
+            <annotations/>
+        </property>
+        <property enabled="false" inSummary="false" insertable="false" label="扩展信息" name="c_config" searchable="false" updatable="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" searchDisplayMode="DROPDOWN" selectionProvider="group_region_select"/>
+        <selectionProvider createNewValueText="" displayMode="DROPDOWN" enabled="true" fk="fk_sre_group_id" searchDisplayMode="DROPDOWN"/>
+    </selectionProviders>
+</configuration>

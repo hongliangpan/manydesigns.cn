@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="热点模块" id="wwku286qmfnt350x6p698t969" navigationRoot="INHERIT" title="热点模块">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="registered">
+            <permission>m2m-update</permission>
+        </group>
+    </permissions>
+</page>

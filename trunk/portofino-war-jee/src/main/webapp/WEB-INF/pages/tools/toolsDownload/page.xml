@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page description="工具下载，如firefox" id="9g1b6fk31f4c8hckbeuztqzk3" navigationRoot="INHERIT" title="工具下载">
+    <detailLayout template="default">
+        <childPages/>
+    </detailLayout>
+    <layout template="default">
+        <childPages/>
+    </layout>
+    <permissions>
+        <group name="administrators">
+            <permission>permission.text.edit</permission>
+        </group>
+    </permissions>
+</page>
