@@ -1,2 +1,7 @@
-manydesigns.cn
+manydesigns.cn Portofino 中文版本
 ==============
+# 中文版本
+
+#增加 用户权限、报表等功能
+
+#在原来4.1.5版本基础上开发
