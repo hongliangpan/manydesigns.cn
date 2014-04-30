@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <changeSet id="tt-001" author="Giampiero Granatella">
+        <createTable tableName="users">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="email" type="varchar(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="first_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_date" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_ip" type="varchar(45)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_access" type="datetime">
+                <constraints nullable="true"/>
+            </column>
+            <column name="access_ip" type="varchar(45)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="validated" type="boolean">
+                <constraints nullable="true"/>
+            </column>
+            <column name="admin" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="project_manager" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="token" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="tt-002" author="Giampiero Granatella">
+        <createTable tableName="projects">
+            <column name="id" type="varchar(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(4000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="url" type="varchar(100)"/>
+            <column name="public" type="boolean"
+                    defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_ticket" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-003" author="Giampiero Granatella">
+        <createTable tableName="tickets">
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="n" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(21000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="assignee" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="created_by" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="affected_version" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="fix_version" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="priority" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="resolution" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="date_created" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_updated" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="tt-004" author="Giampiero Granatella">
+        <createTable tableName="versions">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(4000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="planned_date" type="date"/>
+            <column name="released_date" type="date"/>
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-005" author="Giampiero Granatella">
+        <createTable tableName="components">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(4000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-006" author="Giampiero Granatella">
+        <createTable tableName="affected_components">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="n" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="component" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-007" author="Giampiero Granatella">
+        <createTable tableName="roles">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="role" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-008" author="Giampiero Granatella">
+        <createTable tableName="members">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-009" author="Giampiero Granatella">
+        <createTable tableName="attachments">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="project" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="n" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-010" author="Giampiero Granatella">
+        <createTable tableName="activity">
+            <column name="id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="project" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="n" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="varchar(4000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="user" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-011" author="Paolo Predonzani">
+        <createTable tableName="activity_types">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="type" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="tt-012" author="Giampiero Granatella">
+        <createTable tableName="ticket_states">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="state" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="css_class" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-013" author="Giampiero Granatella">
+        <createTable tableName="ticket_priorities">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="priority" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="css_class" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-014" author="Giampiero Granatella">
+        <createTable tableName="ticket_types">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="type" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="css_class" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-015" author="Giampiero Granatella">
+        <createTable tableName="ticket_resolutions">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="resolution" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="tt-016" author="Giampiero Granatella">
+        <createTable tableName="version_states">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="state" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="css_class" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!-- Inserimento dati iniziali -->
+
+    <changeSet id="tt-117" author="Giampiero Granatella">
+        <insert tableName="ticket_types">
+            <column name="id" valueNumeric="1"/>
+            <column name="type" value="Improvement"/>
+            <column name="css_class" value="label label-info"/>
+        </insert>
+        <insert tableName="ticket_types">
+            <column name="id" valueNumeric="2"/>
+            <column name="type" value="Bug"/>
+            <column name="css_class" value="label label-important"/>
+        </insert>
+        <insert tableName="ticket_types">
+            <column name="id" valueNumeric="3"/>
+            <column name="type" value="Feature"/>
+            <column name="css_class" value="label label-success"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-118" author="Giampiero Granatella">
+        <insert tableName="ticket_states">
+            <column name="id" valueNumeric="1"/>
+            <column name="state" value="Open"/>
+            <column name="css_class" value="label label-success"/>
+        </insert>
+        <insert tableName="ticket_states">
+            <column name="id" valueNumeric="2"/>
+            <column name="state" value="Work in progress"/>
+            <column name="css_class" value="label label-info"/>
+        </insert>
+        <insert tableName="ticket_states">
+            <column name="id" valueNumeric="3"/>
+            <column name="state" value="Resolved"/>
+            <column name="css_class" value="label label-info"/>
+        </insert>
+        <insert tableName="ticket_states">
+            <column name="id" valueNumeric="4"/>
+            <column name="state" value="Closed"/>
+            <column name="css_class" value="label label-inverse"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-119" author="Giampiero Granatella">
+        <insert tableName="ticket_resolutions">
+            <column name="id" valueNumeric="1"/>
+            <column name="resolution" value="Resolved"/>
+        </insert>
+        <insert tableName="ticket_resolutions">
+            <column name="id" valueNumeric="2"/>
+            <column name="resolution" value="Not to be solved"/>
+        </insert>
+        <insert tableName="ticket_resolutions">
+            <column name="id" valueNumeric="3"/>
+            <column name="resolution" value="Duplicate"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-120" author="Giampiero Granatella">
+        <insert tableName="ticket_priorities">
+            <column name="id" valueNumeric="1"/>
+            <column name="priority" value="Low"/>
+            <column name="css_class" value="label"/>
+        </insert>
+        <insert tableName="ticket_priorities">
+            <column name="id" valueNumeric="2"/>
+            <column name="priority" value="Medium"/>
+            <column name="css_class" value="label label-warning"/>
+        </insert>
+        <insert tableName="ticket_priorities">
+            <column name="id" valueNumeric="3"/>
+            <column name="priority" value="High"/>
+            <column name="css_class" value="label label-important"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-121" author="Giampiero Granatella">
+        <insert tableName="version_states">
+            <column name="id" valueNumeric="1"/>
+            <column name="state" value="Planned"/>
+            <column name="css_class" value="label"/>
+        </insert>
+        <insert tableName="version_states">
+            <column name="id" valueNumeric="2"/>
+            <column name="state" value="Work in progress"/>
+            <column name="css_class" value="label label-info"/>
+        </insert>
+        <insert tableName="version_states">
+            <column name="id" valueNumeric="3"/>
+            <column name="state" value="Released"/>
+            <column name="css_class" value="label label-success"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-122" author="Giampiero Granatella">
+        <insert tableName="roles">
+            <column name="id" valueNumeric="1"/>
+            <column name="role" value="Viewer"/>
+        </insert>
+        <insert tableName="roles">
+            <column name="id" valueNumeric="2"/>
+            <column name="role" value="Contributor"/>
+        </insert>
+        <insert tableName="roles">
+            <column name="id" valueNumeric="3"/>
+            <column name="role" value="Editor"/>
+        </insert>
+        <insert tableName="roles">
+            <column name="id" valueNumeric="4"/>
+            <column name="role" value="Manager"/>
+        </insert>
+    </changeSet>
+    <changeSet id="tt-123" author="Paolo Predonzani">
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="1"/>
+            <column name="type" value="ticket.created"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="2"/>
+            <column name="type" value="ticket.updated"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="3"/>
+            <column name="type" value="ticket.deleted"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="11"/>
+            <column name="type" value="comment.created"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="12"/>
+            <column name="type" value="comment.updated"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="13"/>
+            <column name="type" value="comment.deleted"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="21"/>
+            <column name="type" value="attachment.created"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="22"/>
+            <column name="type" value="attachment.updated"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="23"/>
+            <column name="type" value="attachment.deleted"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="31"/>
+            <column name="type" value="affected.component.created"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="32"/>
+            <column name="type" value="affected.component.updated"/>
+        </insert>
+        <insert tableName="activity_types">
+            <column name="id" valueNumeric="33"/>
+            <column name="type" value="affected.component.deleted"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="tt-223" author="Giampiero Granatella">
+        <addPrimaryKey
+                columnNames="project, n"
+                constraintName="pk_ticket"
+                tableName="tickets"/>
+    </changeSet>
+    <changeSet id="tt-224" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="project"
+                             constraintName="fk_ticket_project" referencedTableName="projects"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-225" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="state"
+                             constraintName="fk_ticket_state" referencedTableName="ticket_states"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-226" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="priority"
+                             constraintName="fk_ticket_priority" referencedTableName="ticket_priorities"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-227" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="assignee"
+                             constraintName="fk_ticket_assignee" referencedTableName="users"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-228" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="created_by"
+                             constraintName="fk_ticket_creator" referencedTableName="users"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-229" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="type"
+                             constraintName="fk_ticket_type" referencedTableName="ticket_types"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-230" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="affected_version"
+                             constraintName="fk_ticket_affected_version" referencedTableName="versions"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-231" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="fix_version"
+                             constraintName="fk_ticket_fix_version" referencedTableName="versions"
+                             referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-232" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="activity" baseColumnNames="project, n"
+                                 constraintName="fk_activity_ticket" referencedTableName="tickets"
+                                 referencedColumnNames="project, n"/>
+    </changeSet>
+    <changeSet id="tt-233" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="activity" baseColumnNames="user"
+                                 constraintName="fk_activity_user" referencedTableName="users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-234" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="versions" baseColumnNames="state"
+                                 constraintName="fk_version_state" referencedTableName="version_states"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-235" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="affected_components" baseColumnNames="component"
+                                 constraintName="fk_affected_component_component" referencedTableName="components"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-236" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="affected_components" baseColumnNames="project, n"
+                                 constraintName="fk_affected_component_ticket" referencedTableName="tickets"
+                                 referencedColumnNames="project, n"/>
+    </changeSet>
+    <changeSet id="tt-238" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="members" baseColumnNames="user"
+                                 constraintName="fk_member_user" referencedTableName="users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="tt-239" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="members" baseColumnNames="project"
+                                 constraintName="fk_member_project" referencedTableName="projects"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="tt-240" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="components" baseColumnNames="project"
+                                 constraintName="fk_component_project" referencedTableName="projects"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="tt-241" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="members" baseColumnNames="role"
+                                 constraintName="fk_member_role" referencedTableName="roles"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="tt-242" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="tickets" baseColumnNames="resolution"
+                                 constraintName="fk_ticket_resolution" referencedTableName="ticket_resolutions"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-243" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="attachments" baseColumnNames="project, n"
+                                 constraintName="fk_attachment_ticket" referencedTableName="tickets"
+                                 referencedColumnNames="project, n"/>
+    </changeSet>
+    <changeSet id="tt-244" author="Giampiero Granatella">
+        <addForeignKeyConstraint baseTableName="versions" baseColumnNames="project"
+                                 constraintName="fk_version_project" referencedTableName="projects"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="tt-245" author="Paolo Predonzani">
+        <addForeignKeyConstraint baseTableName="activity" baseColumnNames="type"
+                                 constraintName="fk_activity_type" referencedTableName="activity_types"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="tt-246" author="Paolo Predonzani">
+        <addUniqueConstraint tableName="members" constraintName="members_unique_project_user" columnNames="project,user"/>
+    </changeSet>
+    <changeSet id="tt-247" author="Paolo Predonzani">
+        <addUniqueConstraint tableName="affected_components" constraintName="affected_components_unique_project_n_component" columnNames="project,n,component"/>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration variable="version" searchTitle="" rowsPerPage="10" readTitle="" query="from versions where project = %{#project.id} order by id desc" name="Versions" largeResultSet="false" editTitle="" database="tt" createTitle="">
+    <properties>
+        <property updatable="false" searchable="false" name="id" insertable="false" inSummary="false" enabled="false">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="title" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="description" label="" insertable="true" inSummary="false" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="planned_date" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="released_date" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="false" searchable="false" name="project" insertable="false" inSummary="false" enabled="false">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="state" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider searchDisplayMode="DROPDOWN" fk="fk_version_project" enabled="true" displayMode="DROPDOWN" createNewValueText=""/>
+        <selectionProvider searchDisplayMode="DROPDOWN" fk="fk_version_state" enabled="true" displayMode="DROPDOWN" createNewValueText=""/>
+    </selectionProviders>
+</configuration>

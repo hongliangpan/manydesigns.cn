@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration variable="component" searchTitle="" rowsPerPage="10" readTitle="" query="from components where project = %{#project.id}" name="Components" largeResultSet="false" editTitle="" database="tt" createTitle="">
+    <properties>
+        <property updatable="false" searchable="false" name="id" insertable="false" inSummary="false" enabled="false">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="title" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="true" searchable="false" name="description" label="" insertable="true" inSummary="true" enabled="true">
+            <annotations/>
+        </property>
+        <property updatable="false" searchable="false" name="project" insertable="false" inSummary="false" enabled="false">
+            <annotations/>
+        </property>
+    </properties>
+    <selectionProviders>
+        <selectionProvider fk="fk_component_project" enabled="false"/>
+    </selectionProviders>
+</configuration>
