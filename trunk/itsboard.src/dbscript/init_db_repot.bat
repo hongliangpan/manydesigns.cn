@@ -1,8 +1,8 @@
 set hostName= 127.0.0.1
-set username=riil
-set password=r4rfde32wsaq1
+set username=admin
+set password=123456
 set port=3306
-set dbname=itsboard200
+set dbname=report
 set scriptdir=.
 
 set params=--default-character-set=utf8 -h %hostName% -u%username% -p%password% -P%port% %dbname%
